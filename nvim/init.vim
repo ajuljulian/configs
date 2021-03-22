@@ -1,0 +1,128 @@
+set nocompatible
+
+" Control number of spaces inserted when tab key is pressed
+set tabstop=2
+
+" Number of spaces inserted for indentation
+set shiftwidth=4
+
+" Insert spaces whenever tab key is pressed
+set expandtab
+
+" Activate line numbering
+set number
+
+" Automatically indent the next line to match the current line's indentation
+set autoindent
+
+" Highlight search results
+set hlsearch
+
+" Adjust default color group
+set background=dark
+
+" Automatically read a file again when vim detects that the file has changed
+" outside of vim
+set autoread
+
+" Prevent line numbers from being copied when selecting with the mouse
+set mouse+=a
+
+" Alias unnamed register to the + register to make copying and pasting to the
+" system clipboard easier
+set clipboard=unnamedplus
+
+" Control the position of a new window
+set splitbelow
+set splitright
+
+colorscheme default
+
+syntax enable
+filetype plugin indent on
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Vimscript file settings ------------------------ {{{
+augroup filetype_vim
+  autocmd!
+  autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
+
+" define leader and local leader
+let mapleader = ","
+let maplocalleader = "\\"
+
+" automatically reload file in vim as soon as it changes on disk.
+:set autoread | au CursorHold * checktime | call feedkeys("lh")
+
+" color theme
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+let g:airline_theme='badwolf'
+let g:airline_powerline_fonts = 1
+
+autocmd FileType html setlocal sw=2 sts=2
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+autocmd QuickFixCmdPost *grep* cwindow
+let g:prettier#autoformat = 0
+
+"ale
+let b:ale_fixers = ['prettier', 'eslint']
+
+source keymappings.vim
+
+" Plugins {{{
+source vim-plug/plugins.vim
+" }}}
+
+call glaive#Install()
+
+" Plugin configuration
+source plug-config/indentline.vim
+source plug-config/nerdtree.vim
+
+luafile lua/plugins/compe-config.lua
+
+" Connect to launguage servers {{{
+luafile lua/lsp/lsp-config.lua
+luafile lua/lsp/python-ls.lua
+luafile lua/lsp/ts-ls.lua
+luafile lua/lsp/elixir-ls.lua
+luafile lua/lsp/bash-ls.lua
+" }}}
+
+" vim-mix-format
+let g:mix_format_on_save = 1
+
+" Only show a short message in the command-line bar.
+" You can see the stacktrace via :messages
+let g:mix_format_silent_errors = 0
+
+" Autoformatting using codefmt {{{
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType vue,javascript AutoFormatBuffer prettier
+augroup END
+" }}}
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
+
+" Python-specific {{{
+
+" comment out a line
+autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
+" }}}
