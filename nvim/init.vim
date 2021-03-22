@@ -36,9 +36,14 @@ set clipboard=unnamedplus
 set splitbelow
 set splitright
 
+" Avoid showing message extra message when using completion
+set shortmess+=c
+
 colorscheme default
 
+" Enable syntax highlighting
 syntax enable
+
 filetype plugin indent on
 
 " Set completeopt to have a better completion experience
@@ -51,14 +56,14 @@ augroup filetype_vim
 augroup END
 " }}}
 
-" define leader and local leader
+" Define leader and local leader
 let mapleader = ","
 let maplocalleader = "\\"
 
-" automatically reload file in vim as soon as it changes on disk.
+" Automatically reload file in vim as soon as it changes on disk.
 :set autoread | au CursorHold * checktime | call feedkeys("lh")
 
-" color theme
+" Color theme
 if (has("termguicolors"))
   set termguicolors
 endif
@@ -71,7 +76,7 @@ autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 autocmd QuickFixCmdPost *grep* cwindow
 let g:prettier#autoformat = 0
 
-"ale
+" Ale
 let b:ale_fixers = ['prettier', 'eslint']
 
 source keymappings.vim
@@ -118,11 +123,8 @@ augroup autoformat_settings
 augroup END
 " }}}
 
-" Avoid showing message extra message when using completion
-set shortmess+=c
-
 " Python-specific {{{
 
-" comment out a line
+" Comment out a line
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 " }}}
