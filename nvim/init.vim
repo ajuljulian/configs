@@ -79,26 +79,26 @@ let g:prettier#autoformat = 0
 " Ale
 let b:ale_fixers = ['prettier', 'eslint']
 
-source keymappings.vim
+source ~/.config/nvim/keymappings.vim
 
 " Plugins {{{
-source vim-plug/plugins.vim
+source ~/.config/nvim/vim-plug/plugins.vim
 " }}}
 
 call glaive#Install()
 
 " Plugin configuration
-source plug-config/indentline.vim
-source plug-config/nerdtree.vim
+source ~/.config/nvim/plug-config/indentline.vim
+source ~/.config/nvim/plug-config/nerdtree.vim
 
-luafile lua/plugins/compe-config.lua
+luafile ~/.config/nvim/lua/plugins/compe-config.lua
 
 " Connect to launguage servers {{{
-luafile lua/lsp/lsp-config.lua
-luafile lua/lsp/python-ls.lua
-luafile lua/lsp/ts-ls.lua
-luafile lua/lsp/elixir-ls.lua
-luafile lua/lsp/bash-ls.lua
+luafile ~/.config/nvim/lua/lsp/lsp-config.lua
+luafile ~/.config/nvim/lua/lsp/python-ls.lua
+luafile ~/.config/nvim/lua/lsp/ts-ls.lua
+luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
+luafile ~/.config/nvim/lua/lsp/bash-ls.lua
 " }}}
 
 " vim-mix-format

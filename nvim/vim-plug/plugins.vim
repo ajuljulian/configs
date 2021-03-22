@@ -30,6 +30,7 @@ Plug 'mhinz/vim-mix-format'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'elixir-lsp/coc-elixir', {'branch': 'release', 'do': 'yarn install && yarn prepack'}
 Plug 'neovim/nvim-lspconfig'
+Plug 'glepnir/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ryanoasis/vim-devicons'
