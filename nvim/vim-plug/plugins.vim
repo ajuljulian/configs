@@ -34,6 +34,7 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ryanoasis/vim-devicons'
+Plug 'kosayoda/nvim-lightbulb'
 " vim code formatter
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'

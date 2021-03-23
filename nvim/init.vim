@@ -123,7 +123,8 @@ augroup autoformat_settings
 augroup END
 " }}}
 
-" Python-specific {{{
+" Lightbulb
+autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
 
 " Comment out a line
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
