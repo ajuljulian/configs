@@ -47,7 +47,7 @@ syntax enable
 filetype plugin indent on
 
 " Set completeopt to have a better completion experience
-set completeopt=menuone,noinsert,noselect
+"set completeopt=menuone,noinsert,noselect
 
 " Vimscript file settings ------------------------ {{{
 augroup filetype_vim
@@ -90,16 +90,17 @@ call glaive#Install()
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
+source ~/.config/nvim/plug-config/coc.vim
 
-luafile ~/.config/nvim/lua/plugins/compe-config.lua
+"luafile ~/.config/nvim/lua/plugins/compe-config.lua
 
 " Connect to launguage servers {{{
-luafile ~/.config/nvim/lua/lsp/python-ls.lua
-luafile ~/.config/nvim/lua/lsp/ts-ls.lua
-luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
-luafile ~/.config/nvim/lua/lsp/bash-ls.lua
-
-luafile ~/.config/nvim/lua/lsp/lsp-config.lua
+"luafile ~/.config/nvim/lua/lsp/python-ls.lua
+"luafile ~/.config/nvim/lua/lsp/ts-ls.lua
+"luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
+"luafile ~/.config/nvim/lua/lsp/bash-ls.lua
+"
+"luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 " }}}
 
 " vim-mix-format
