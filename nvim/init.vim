@@ -94,11 +94,12 @@ source ~/.config/nvim/plug-config/nerdtree.vim
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
 
 " Connect to launguage servers {{{
-luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/python-ls.lua
 luafile ~/.config/nvim/lua/lsp/ts-ls.lua
 luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
 luafile ~/.config/nvim/lua/lsp/bash-ls.lua
+
+luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 " }}}
 
 " vim-mix-format
