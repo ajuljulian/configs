@@ -57,11 +57,11 @@ augroup END
 " }}}
 
 " Define leader and local leader
-let mapleader = ","
+let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
 " Automatically reload file in vim as soon as it changes on disk.
-:set autoread | au CursorHold * checktime | call feedkeys("lh")
+":set autoread | au CursorHold * checktime | call feedkeys("lh")
 
 " Color theme
 if (has("termguicolors"))
