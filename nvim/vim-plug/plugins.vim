@@ -35,6 +35,7 @@ Plug 'elixir-lsp/coc-elixir', {'branch': 'release', 'do': 'yarn install && yarn 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'kosayoda/nvim-lightbulb'
+Plug 'mhinz/vim-startify'
 " vim code formatter
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'

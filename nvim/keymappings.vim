@@ -8,7 +8,7 @@ noremap <leader>b :ls<CR>:b<Space>
 
 " shortcuts to edit the vimrc file in a split window and source it.
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap ,sv :source $MYVIMRC<cr>
 
 " Go to tab by tab number
 noremap <leader>1 1gt
