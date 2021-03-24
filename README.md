@@ -13,3 +13,12 @@ And let's say the neovim config file is under `~/.config/nvim`
 1. Install all the plugins: `:PlugInstall`
 1. Install all coc extensions e.g. `CocInstall coc-tsserver`
 1. Run `:checkhealth` to see if there are any issues.  You may have to install the neovim python module to get rid of the pyx warning: `pip install neovim`
+
+### External dependencies
+
+1. ranger: `brew install ranger`
+
+## Alacritty (terminal emulator)
+
+Create a symlink from `~/.alacritty.yml` to `~/Development/configs/alacritty.yml`:
+`ln -s ~/.alacritty.yml ~/Development/configs/alacritty.yml`

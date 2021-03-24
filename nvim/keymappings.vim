@@ -4,11 +4,8 @@ nnoremap <esc><esc> :silent! nohls<cr>
 " Pressing <Leader>b will list the available buffers and prepare :b
 noremap <leader>b :ls<CR>:b<Space>
 
-" Leader key shortcuts {{{
-
-" shortcuts to edit the vimrc file in a split window and source it.
+" shortcuts to edit the vimrc file in a split window
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap ,sv :source $MYVIMRC<cr>
 
 " Go to tab by tab number
 noremap <leader>1 1gt
@@ -27,8 +24,6 @@ inoremap <leader>u <esc>viwUi
 
 " shortcut to convert the current word to UPPERCASE in normal mode
 nnoremap <leader>u viwUe
-
-" }}}
 
 " keymap Split
 nnoremap <C-J> <C-W><C-J>
@@ -53,3 +48,10 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Use <leader>q to close buffer
 nnoremap <leader>q :q<CR>
+
+" source init.vim file
+nnoremap ,sv :source $MYVIMRC<cr>
+
+" trigger vim-which-key if no other key is pressed 1000ms after pressing the
+" leader key
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>

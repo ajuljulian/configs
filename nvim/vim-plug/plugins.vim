@@ -36,6 +36,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'kosayoda/nvim-lightbulb'
 Plug 'mhinz/vim-startify'
+Plug 'liuchengxu/vim-which-key'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 " vim code formatter
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
