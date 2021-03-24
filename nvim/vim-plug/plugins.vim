@@ -39,6 +39,7 @@ Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vim-which-key'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
+Plug 'justinmk/vim-sneak'
 " vim code formatter
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
