@@ -40,6 +40,7 @@ set splitright
 set shortmess+=c
 
 colorscheme default
+highlight Comment cterm=italic gui=italic
 
 " Enable syntax highlighting
 syntax enable
