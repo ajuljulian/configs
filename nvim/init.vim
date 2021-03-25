@@ -134,6 +134,7 @@ if !has("gui_running")
     " for which-key and floatwindow of fzf
     highlight Pmenu guibg=#3A3A3A
 endif
+
 " Lightbulb
 
 autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
