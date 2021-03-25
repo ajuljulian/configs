@@ -126,7 +126,16 @@ augroup autoformat_settings
 augroup END
 " }}}
 
+" Disable theme in terminal vim - this is getting rid of the annoying purple
+" background color of floating windows.  I'm not sure if it's the correct way
+" of doing it, but seems to be working.
+if !has("gui_running")
+    colorscheme default
+    " for which-key and floatwindow of fzf
+    highlight Pmenu guibg=#3A3A3A
+endif
 " Lightbulb
+
 autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
 
 " Comment out a line
