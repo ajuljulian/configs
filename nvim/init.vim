@@ -80,6 +80,7 @@ let g:prettier#autoformat = 0
 " Ale
 let b:ale_fixers = ['prettier', 'eslint']
 
+" Load shortcuts
 source ~/.config/nvim/keymappings.vim
 
 " Plugins {{{
