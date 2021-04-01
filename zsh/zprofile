@@ -1,0 +1,65 @@
+# Should be able to go into vi mode in bash:
+set -o vi
+
+export EDITOR=nvim
+
+export TERM=xterm-256color
+
+export PATH=$PATH:/Users/arajuljulian/.local/bin
+export PATH=$PATH:/Users/arajuljulian/bin
+
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
+
+export PATH=$PATH:'/Applications/Sublime Text.app/Contents/SharedSupport/bin'
+export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
+export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/credentials.json
+
+export FZF_DEFAULT_COMMAND='rg --files'
+
+###################################
+####### Useful functions ##########
+###################################
+function bb { open -a /Applications/BBEdit.app $*; }
+function aws-personal { aws --profile ara-personal $*; }
+
+# Useful aliases
+alias dd='cd ~/Development'
+alias ddp='dd; cd personal'
+alias ddc='dd; cd configs'
+alias my_ec2_instance='ssh -i ~/.ssh/ara-aws-key-oregon.pem ec2-user@54.214.77.218'
+alias kali_instance='ssh -i ~/.ssh/ara-aws-key-oregon.pem ec2-user@34.219.99.234'
+alias home_assistant='ssh -i ~/.ssh/id_rsa_homeassistant root@hassio.local'
+alias pizero_garage='ssh pi@pizero-garage-2.local'
+alias pizero_living_room='ssh pi@pizero-living-room.local'
+alias pizero_kitchen='ssh pi@pizero-kitchen.local'
+alias canakit_pi='ssh pi@192.168.7.216'
+alias sphero_pi='ssh -i ~/.ssh/id_rsa_sphero pi@192.168.7.90'
+alias dover_sphero_pi='ssh -i ~/.ssh/id_rsa_sphero pi@192.168.4.92'
+alias tmux_server='ssh -i ~/.ssh/ara-aws-key-oregon.pem ec2-user@34.220.138.26'
+
+export AWS_DEFAULT_PROFILE=ara-personal
+
+# added by Anaconda3 2019.10 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/arajuljulian/opt/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/arajuljulian/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/arajuljulian/opt/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/arajuljulian/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+source "$HOME/.cargo/env"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
