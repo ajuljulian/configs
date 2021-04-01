@@ -11,6 +11,7 @@ export PATH=$PATH:/Users/arajuljulian/bin
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
 
+export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=$PATH:'/Applications/Sublime Text.app/Contents/SharedSupport/bin'
 export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
 export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/credentials.json
@@ -60,6 +61,4 @@ unset __conda_setup
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-source "$HOME/.cargo/env"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
