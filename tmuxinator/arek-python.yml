@@ -1,0 +1,9 @@
+name: arek-python
+root: ~/Development/personal/python/learn-jupylet
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - nvim
+        - #empty, will just run plain bash
+  - console: # empty
