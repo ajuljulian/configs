@@ -1,0 +1,10 @@
+name: docker-casts 
+root: ~/Development/personal/learn-kubernetes/DockerCasts
+
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - #empty
+        - #empty
+  - console: # empty
