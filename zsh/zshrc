@@ -103,3 +103,5 @@ source $ZSH/oh-my-zsh.sh
 
 # setup vi editing mode
 bindkey -v
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
