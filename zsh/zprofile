@@ -16,8 +16,8 @@ export PATH=$PATH:'/Applications/Sublime Text.app/Contents/SharedSupport/bin'
 export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
 export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/credentials.json
 
-export JFROG_USER=$(security find-generic-password -w -a $USER -D "environment variable" -s "JFROG_USER")
-export JFROG_PASSWORD=$(security find-generic-password -w -a $USER -D "environment variable" -s "JFROG_PASSWORD")
+# source a file containing environment specific entries if it exists.
+[ -f ~/.zenv_specific ]  && source ~/.zenv_specific
 
 #export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export FZF_DEFAULT_COMMAND='rg --files'
