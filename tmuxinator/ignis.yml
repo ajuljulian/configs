@@ -1,0 +1,12 @@
+# /Users/arajuljulian/.config/tmuxinator/ignis.yml
+
+name: ignis
+root: ~/Development/tinder/
+
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - 
+        -
+  - console: # empty

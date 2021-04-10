@@ -5,8 +5,8 @@ export EDITOR=nvim
 
 export TERM=xterm-256color
 
-export PATH=$PATH:/Users/arajuljulian/.local/bin
-export PATH=$PATH:/Users/arajuljulian/bin
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/bin
 
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
@@ -16,6 +16,10 @@ export PATH=$PATH:'/Applications/Sublime Text.app/Contents/SharedSupport/bin'
 export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
 export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/credentials.json
 
+export JFROG_USER=$(security find-generic-password -w -a $USER -D "environment variable" -s "JFROG_USER")
+export JFROG_PASSWORD=$(security find-generic-password -w -a $USER -D "environment variable" -s "JFROG_PASSWORD")
+
+#export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export FZF_DEFAULT_COMMAND='rg --files'
 
 ###################################
@@ -44,15 +48,15 @@ export AWS_DEFAULT_PROFILE=ara-personal
 # added by Anaconda3 2019.10 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/arajuljulian/opt/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+__conda_setup="$(CONDA_REPORT_ERRORS=false '~/opt/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
 if [ $? -eq 0 ]; then
     \eval "$__conda_setup"
 else
-    if [ -f "/Users/arajuljulian/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/arajuljulian/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "~/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "~/opt/anaconda3/etc/profile.d/conda.sh"
         CONDA_CHANGEPS1=false conda activate base
     else
-        \export PATH="/Users/arajuljulian/opt/anaconda3/bin:$PATH"
+        \export PATH="~/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
