@@ -1,7 +1,7 @@
-# /Users/arajuljulian/.config/tmuxinator/docker-casts-2.yml
+# /Users/arajuljulian/.config/tmuxinator/complex
 
-name: docker-casts-2
-root: ~/Development/personal/learn-kubernetes/DockerCasts/complex
+name: complex
+root: ~/Development/personal/learn-kubernetes/ara_code/complex
 
 # Optional tmux socket
 # socket_name: foo

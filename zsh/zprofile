@@ -42,6 +42,7 @@ alias canakit_pi='ssh pi@192.168.7.216'
 alias sphero_pi='ssh -i ~/.ssh/id_rsa_sphero pi@192.168.7.90'
 alias dover_sphero_pi='ssh -i ~/.ssh/id_rsa_sphero pi@192.168.4.92'
 alias tmux_server='ssh -i ~/.ssh/ara-aws-key-oregon.pem ec2-user@34.220.138.26'
+alias mux=tmuxinator
 
 export AWS_DEFAULT_PROFILE=ara-personal
 
