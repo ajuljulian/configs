@@ -18,7 +18,56 @@ And let's say the neovim config file is under `~/.config/nvim`
 
 1. ranger: `brew install ranger`
 
+## Nerd Fonts
+
+https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts
+
+Install using homebrew:
+```
+$ brew tap homebrew/cask-fonts
+$ brew install --cask font-hack-nerd-font
+```
+
+Note: make sure your terminal is set to this font.  For example, in the alacritty.yml config file, I've set the font explicitly to Hack Nerd Font Mono.
+
 ## Alacritty (terminal emulator)
 
-Create a symlink from `~/.alacritty.yml` to `~/Development/configs/alacritty.yml`:
-`ln -s ~/.alacritty.yml ~/Development/configs/alacritty.yml`
+https://github.com/alacritty/alacritty
+
+Create a symlink from `~/.alacritty.yml` to `<project dir>/configs/alacritty.yml`:
+```
+ln -s ~/.alacritty.yml ~/Development/configs/alacritty.yml
+```
+
+## Powerlevel10k
+
+https://github.com/romkatv/powerlevel10k#oh-my-zsh
+
+Install for Oh My Zsh:
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+Create a symlink from `~/.p10k.zsh` to `<project dir>/configs/zsh/p10k.zsh`
+```
+ln -s ~/.p10k.zsh ~/Development/configs/zsh/p10k.zsh
+```
+
+## Colorls
+
+https://github.com/athityakumar/colorls#uninstallatio
+
+Install:
+```
+$ gem install colorls
+```
+
+## LSD
+
+https://github.com/Peltoche/lsd
+
+Install:
+```
+$ brew install lsd
+```
+
