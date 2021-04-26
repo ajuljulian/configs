@@ -52,7 +52,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 Create a symlink from `~/.p10k.zsh` to `<project dir>/configs/zsh/p10k.zsh`
 ```
-ln -s ~/.p10k.zsh ~/Development/configs/zsh/p10k.zsh
+ln -s ~/Development/configs/zsh/p10k.zsh ~/.p10k.zsh
 ```
 
 Configure it:
