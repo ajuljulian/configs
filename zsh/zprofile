@@ -14,7 +14,6 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=$PATH:'/Applications/Sublime Text.app/Contents/SharedSupport/bin'
 export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
-export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/credentials.json
 
 # source a file containing environment specific entries if it exists.
 [ -f ~/.zenv_specific ]  && source ~/.zenv_specific
