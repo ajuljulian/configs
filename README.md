@@ -1,8 +1,10 @@
 # What is this?
 
-It's a list of configuration files that I use all on all my machines.
+It's a list of configuration files that I use on all my machines. I try to aggregate as much of my Dotfiles in one location and create symlinks to them from their expected locations.
 
-## Neovim setup
+## Neovim
+
+https://neovim.io
 
 Let's say you cloned this repo to `~/Development/configs`.
 And let's say the neovim config file is under `~/.config/nvim`
@@ -53,6 +55,11 @@ Create a symlink from `~/.p10k.zsh` to `<project dir>/configs/zsh/p10k.zsh`
 ln -s ~/.p10k.zsh ~/Development/configs/zsh/p10k.zsh
 ```
 
+Configure it:
+```
+$ p10k configure
+```
+
 ## Colorls
 
 https://github.com/athityakumar/colorls#uninstallatio
@@ -69,5 +76,44 @@ https://github.com/Peltoche/lsd
 Install:
 ```
 $ brew install lsd
+```
+
+## Tmuxinator
+
+https://github.com/tmuxinator/tmuxinator
+
+Install:
+```
+$ gem install tmuxinator
+```
+
+Update:
+```
+$ gem update tmuxinator
+```
+
+List commands
+```
+$ tmuxinator commands
+```
+
+List projects:
+```
+$ tmuxinator [list|ls]
+```
+
+Copy existing project:
+```
+$ tmuxinator [copy|cp|c] {existing} {new}
+```
+
+Remove a project
+```
+$ tmuxinator [delete|rm] {project}
+```
+
+Edit project
+```
+$ tmuxinator open {project}
 ```
 
