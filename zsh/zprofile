@@ -45,6 +45,7 @@ alias mux='tmuxinator'
 alias lsd='lsd --color=always'
 alias ls='lsd'
 alias lt='ls --tree'
+alias zzz='source ~/.zshrc && source ~/.zprofile'
 
 export AWS_DEFAULT_PROFILE=ara-personal
 
