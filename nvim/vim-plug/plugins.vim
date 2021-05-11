@@ -31,11 +31,22 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'kosayoda/nvim-lightbulb'
+
+" Fancy start screen
 Plug 'mhinz/vim-startify'
+
+" Display available keybindings in popup
 Plug 'liuchengxu/vim-which-key'
+
+" Ranger integration
 Plug 'francoiscabrol/ranger.vim'
+
+" Delete a buffer without closing the window
 Plug 'rbgrouleff/bclose.vim'
+
+" Jump to any location specified by exactly two characters
 Plug 'justinmk/vim-sneak'
+
 " vim code formatter
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'

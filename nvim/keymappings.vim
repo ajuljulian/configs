@@ -59,3 +59,15 @@ nnoremap ,sv :source $MYVIMRC<cr>
 " trigger vim-which-key if no other key is pressed 1000ms after pressing the
 " leader key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
+" lsp provider to find the cursor word definition and reference
+nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
+" or use command LspSagaFinder
+nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+
+" code action
+nnoremap <silent><leader>ca <cmd>lua require('lspsaga.codeaction').code_action()<CR>
+vnoremap <silent><leader>ca :<C-U>lua require('lspsaga.codeaction').range_code_action()<CR>
+" or use command
+nnoremap <silent><leader>ca :Lspsaga code_action<CR>
+vnoremap <silent><leader>ca :<C-U>Lspsaga range_code_action<CR>

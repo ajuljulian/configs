@@ -95,6 +95,8 @@ source ~/.config/nvim/plug-config/nerdtree.vim
 
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
 
+luafile ~/.config/nvim/lua/plugins/lspsaga.lua
+
 " Connect to launguage servers {{{
 "luafile ~/.config/nvim/lua/lsp/python-ls.lua
 "luafile ~/.config/nvim/lua/lsp/ts-ls.lua
