@@ -33,6 +33,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " Map NerdTree
 map <C-\> :NERDTreeToggle<CR>
+map <C-Z> :NERDTreeToggle<CR>
 
 " FZF exclude files based on .gitignore
 nnoremap <C-G> :GFiles<CR>
