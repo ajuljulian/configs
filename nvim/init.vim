@@ -92,6 +92,7 @@ call glaive#Install()
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
+source ~/.config/nvim/plug-config/neoformat.vim
 
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
 
