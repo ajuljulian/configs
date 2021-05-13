@@ -1,7 +1,7 @@
 set nocompatible
 
 " Control number of spaces inserted when tab key is pressed
-set tabstop=2
+set tabstop=4
 
 " Number of spaces inserted for indentation
 set shiftwidth=4
@@ -71,6 +71,8 @@ endif
 
 let g:airline_theme='badwolf'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 autocmd FileType html setlocal sw=2 sts=2
 autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
