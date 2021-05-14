@@ -19,6 +19,7 @@ And let's say the neovim config file is under `~/.config/nvim`
 ### External dependencies
 
 1. ranger: `brew install ranger`
+1. ripgrep: `brew install ripgrep`
 
 ## Nerd Fonts
 
