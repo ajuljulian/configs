@@ -131,7 +131,7 @@ augroup autoformat_settings
   autocmd FileType java AutoFormatBuffer google-java-format
   autocmd FileType python AutoFormatBuffer yapf
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
-  autocmd FileType vue,javascript AutoFormatBuffer prettier
+  "autocmd FileType vue,javascript AutoFormatBuffer prettier
 augroup END
 " }}}
 
