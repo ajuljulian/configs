@@ -74,10 +74,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-autocmd FileType html setlocal sw=2 sts=2
-autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
 autocmd QuickFixCmdPost *grep* cwindow
-let g:prettier#autoformat = 0
 
 " Ale
 let b:ale_fixers = ['prettier', 'eslint']
@@ -89,7 +86,7 @@ source ~/.config/nvim/keymappings.vim
 source ~/.config/nvim/vim-plug/plugins.vim
 " }}}
 
-call glaive#Install()
+"call glaive#Install()
 
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
@@ -119,21 +116,6 @@ let g:mix_format_on_save = 1
 " Only show a short message in the command-line bar.
 " You can see the stacktrace via :messages
 let g:mix_format_silent_errors = 0
-
-" Autoformatting using codefmt {{{
-augroup autoformat_settings
-  autocmd FileType bzl AutoFormatBuffer buildifier
-  autocmd FileType c,cpp,proto AutoFormatBuffer clang-format
-  autocmd FileType dart AutoFormatBuffer dartfmt
-  autocmd FileType go AutoFormatBuffer gofmt
-  autocmd FileType gn AutoFormatBuffer gn
-  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
-  autocmd FileType java AutoFormatBuffer google-java-format
-  autocmd FileType python AutoFormatBuffer yapf
-  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
-  "autocmd FileType vue,javascript AutoFormatBuffer prettier
-augroup END
-" }}}
 
 " Disable theme in terminal vim - this is getting rid of the annoying purple
 " background color of floating windows.  I'm not sure if it's the correct way

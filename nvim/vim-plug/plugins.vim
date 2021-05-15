@@ -8,7 +8,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'gorodinskiy/vim-coloresque'
-"Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-commentary'
 Plug 'dense-analysis/ale'
@@ -50,8 +50,8 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'justinmk/vim-sneak'
 
 " vim code formatter
-Plug 'google/vim-maktaba'
-Plug 'google/vim-codefmt'
-Plug 'google/vim-glaive'
+"Plug 'google/vim-maktaba'
+"Plug 'google/vim-codefmt'
+"Plug 'google/vim-glaive'
 
 call plug#end()
