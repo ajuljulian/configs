@@ -33,6 +33,7 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'kosayoda/nvim-lightbulb'
+Plug 'tpope/vim-surround'
 
 " Fancy start screen
 Plug 'mhinz/vim-startify'
@@ -48,10 +49,5 @@ Plug 'rbgrouleff/bclose.vim'
 
 " Jump to any location specified by exactly two characters
 Plug 'justinmk/vim-sneak'
-
-" vim code formatter
-"Plug 'google/vim-maktaba'
-"Plug 'google/vim-codefmt'
-"Plug 'google/vim-glaive'
 
 call plug#end()
