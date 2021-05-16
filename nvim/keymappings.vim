@@ -40,6 +40,7 @@ nnoremap <C-G> :GFiles<CR>
 
 " Invoke FZF file finder
 nnoremap <C-P> :<C-u>FZF<CR>
+nnoremap <leader>s :<C-u>FZF<CR>
 
 " Window Tab
 nnoremap <C-N> :tabnew<CR>
