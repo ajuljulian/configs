@@ -1,10 +1,10 @@
 set nocompatible
 
 " Control number of spaces inserted when tab key is pressed
-set tabstop=4
+set tabstop=2
 
 " Number of spaces inserted for indentation
-set shiftwidth=4
+set shiftwidth=2
 
 " Insert spaces whenever tab key is pressed
 set expandtab
