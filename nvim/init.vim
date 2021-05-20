@@ -86,8 +86,6 @@ source ~/.config/nvim/keymappings.vim
 source ~/.config/nvim/vim-plug/plugins.vim
 " }}}
 
-"call glaive#Install()
-
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
