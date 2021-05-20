@@ -13,8 +13,6 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-commentary'
 Plug 'dense-analysis/ale'
 Plug 'sbdchd/neoformat'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-projectionist'
 Plug 'Yggdroot/indentLine'
 Plug 'jremmen/vim-ripgrep'
@@ -34,6 +32,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'kosayoda/nvim-lightbulb'
 Plug 'tpope/vim-surround'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Fancy start screen
 Plug 'mhinz/vim-startify'

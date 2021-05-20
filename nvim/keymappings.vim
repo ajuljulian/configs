@@ -32,15 +32,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Map NerdTree
-map <C-\> :NERDTreeToggle<CR>
 map <C-Z> :NERDTreeToggle<CR>
-
-" FZF exclude files based on .gitignore
-nnoremap <C-G> :GFiles<CR>
-
-" Invoke FZF file finder
-nnoremap <C-P> :<C-u>FZF<CR>
-nnoremap <leader>s :<C-u>FZF<CR>
 
 " Window Tab
 nnoremap <C-N> :tabnew<CR>
@@ -76,3 +68,9 @@ vnoremap <silent><leader>ca :<C-U>lua require('lspsaga.codeaction').range_code_a
 " or use command
 nnoremap <silent><leader>ca :Lspsaga code_action<CR>
 vnoremap <silent><leader>ca :<C-U>Lspsaga range_code_action<CR>
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
