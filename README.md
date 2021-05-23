@@ -23,12 +23,9 @@ And let's say the neovim config file is under `~/.config/nvim`
 1. ranger: `brew install ranger`
 1. ripgrep: `brew install ripgrep`
 1. LSP
-    1. python: `$ npm i -g pyright`
-    1. typescript: `$ npm install -g typescript typescript-language-server`
-    1. bash: `$ npm i -g bash-language-server`
-
-
-
+   1. python: `$ npm i -g pyright`
+   1. typescript: `$ npm install -g typescript typescript-language-server`
+   1. bash: `$ npm i -g bash-language-server`
 
 ## Nerd Fonts
 
@@ -54,22 +51,24 @@ $ brew install alacritty
 Create a symlink from `~/.alacritty.yml` to `<project dir>/configs/alacritty.yml`:
 
 ```
-ln -s ~/.alacritty.yml ~/Development/configs/alacritty.yml
+ln -s ~/Development/configs/alacritty.yml ~/.alacritty.yml
 ```
 
 ## Zsh
 
 Install:
+
 ```
 $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 Link to my dotfiles:
+
 ```
-$ ln -s ~/.zlogin ~/Development/configs/zsh/zlogin
-$ ln -s ~/.zprofile ~/Development/configs/zsh/zprofile
-$ ln -s ~/.zshrc ~/Development/configs/zsh/zshrc
-$ ln -s ~/.zshenv ~/Development/configs/zsh/zshenv
+$ ln -s ~/Development/configs/zsh/zlogin ~/.zlogin
+$ ln -s ~/Development/configs/zsh/zprofile ~/.zprofile
+$ ln -s ~/Development/configs/zsh/zshrc ~/.zshrc
+$ ln -s ~/Development/configs/zsh/zshenv ~/.zshenv
 ```
 
 ## Powerlevel10k
