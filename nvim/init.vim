@@ -130,3 +130,8 @@ autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
 " Comment out a line
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 " }}}
+"
+command! Scratch lua require'tools'.makeScratch()
+command! Hello lua require'tools'.hello()
+command! CurLine lua require'tools'.currentLineInfo()
+command! PrintCurLine lua require'tools'.printCurLine()
