@@ -101,6 +101,7 @@ luafile ~/.config/nvim/lua/plugins/lspsaga.lua
 luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
 luafile ~/.config/nvim/lua/lsp/bash-ls.lua
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
+luafile ~/.config/nvim/lua/lsp/lua-ls.lua
 " }}}
 
 " Disable quote concealing.  For some reason, the IndentLine plugin needs
