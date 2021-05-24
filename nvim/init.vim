@@ -128,6 +128,9 @@ endif
 " Lightbulb
 autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
 
+" Don't automatically insert a comment character after hitting <Enter>
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " Comment out a line
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 " }}}
