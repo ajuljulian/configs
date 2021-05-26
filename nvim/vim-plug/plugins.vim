@@ -2,9 +2,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'gorodinskiy/vim-coloresque'

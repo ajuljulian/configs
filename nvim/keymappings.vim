@@ -31,9 +31,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Map NerdTree
-map <C-Z> :NERDTreeToggle<CR>
-
 " Window Tab
 nnoremap <C-N> :tabnew<CR>
 nnoremap <C-Up> :tabprevious<CR>
