@@ -1,6 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
+" Javascript bundle.  Provides syntax highlighting and indentation
 Plug 'pangloss/vim-javascript'
+
+" Git support
 Plug 'tpope/vim-fugitive'
 
 " File explorer written in lua
@@ -17,11 +20,13 @@ Plug 'gorodinskiy/vim-coloresque'
 " Wrapper for Prettier
 Plug 'prettier/vim-prettier'
 
+" React syntax highlighting and indenting
 Plug 'maxmellon/vim-jsx-pretty'
 
 " Comment stuff out
 Plug 'tpope/vim-commentary'
 
+" Asynchronous lint engine
 Plug 'dense-analysis/ale'
 
 " Formatting code
