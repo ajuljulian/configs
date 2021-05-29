@@ -44,7 +44,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 nnoremap <leader>q :q<CR>
 
 " source init.vim file
-nnoremap ,sv :source $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " trigger vim-which-key if no other key is pressed 1000ms after pressing the
 " leader key

@@ -32,8 +32,6 @@ Plug 'dense-analysis/ale'
 " Formatting code
 Plug 'sbdchd/neoformat'
 
-Plug 'tpope/vim-projectionist'
-
 " Display thin vertical lines at each indentation level
 Plug 'Yggdroot/indentLine'
 

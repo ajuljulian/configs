@@ -58,7 +58,7 @@ augroup END
 " }}}
 
 " Define leader and local leader
-let mapleader = "\<Space>"
+let mapleader = "\;"
 let maplocalleader = "\\"
 
 " Automatically reload file in vim as soon as it changes on disk.
@@ -88,7 +88,6 @@ source ~/.config/nvim/vim-plug/plugins.vim
 
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
-"source ~/.config/nvim/plug-config/nerdtree.vim
 source ~/.config/nvim/plug-config/nvim-tree.vim
 source ~/.config/nvim/plug-config/neoformat.vim
 
