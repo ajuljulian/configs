@@ -104,11 +104,6 @@ luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/lua-ls.lua
 " }}}
 
-" Disable quote concealing.  For some reason, the IndentLine plugin needs
-" set the conceal level to 2.  This line allows us to keep our conceal
-" level
-let g:indentLine_setConceal = 0
-
 " vim-mix-format
 let g:mix_format_on_save = 1
 
