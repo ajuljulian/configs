@@ -98,7 +98,4 @@ Plug 'francoiscabrol/ranger.vim'
 " Delete a buffer without closing the window
 Plug 'rbgrouleff/bclose.vim'
 
-" Jump to any location specified by exactly two characters
-Plug 'justinmk/vim-sneak'
-
 call plug#end()
