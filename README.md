@@ -1,6 +1,6 @@
 # What is this?
 
-It's a list of configuration files that I use on all my machines. I try to aggregate as much of my Dotfiles in one location and create symlinks to them from their expected locations.
+I use these dotfiles on all my machines. I try to aggregate as much of my Dotfiles in one location and create symlinks to them from their expected locations.
 
 ## Neovim
 
