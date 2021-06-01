@@ -15,6 +15,9 @@ set number
 " Automatically indent the next line to match the current line's indentation
 set autoindent
 
+" Highlight the cursor line
+set cursorline
+
 " Highlight search results
 set hlsearch
 
@@ -58,7 +61,7 @@ augroup END
 " }}}
 
 " Define leader and local leader
-let mapleader = "\;"
+let mapleader = "\<space>"
 let maplocalleader = "\\"
 
 " Automatically reload file in vim as soon as it changes on disk.
