@@ -105,6 +105,7 @@ luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
 luafile ~/.config/nvim/lua/lsp/bash-ls.lua
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/lua-ls.lua
+luafile ~/.config/nvim/lua/lsp/golang-ls.lua
 " }}}
 
 " vim-mix-format
