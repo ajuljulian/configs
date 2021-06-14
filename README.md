@@ -27,6 +27,7 @@ And let's say the neovim config file is under `~/.config/nvim`
    1. typescript: `$ npm install -g typescript typescript-language-server`
    1. bash: `$ npm i -g bash-language-server`
    1. golang: `$ brew install go && brew install gopls`
+1. Prettier (Neovim): `npm install --global prettier`
 
 ## Nerd Fonts
 
