@@ -126,3 +126,5 @@ alias lc='colorls -lA --sd'
 
 # Setup kubectl autocomplete
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+
+alias luamake=/Users/arajuljulian/Downloads/lua-language-server/3rd/luamake/luamake

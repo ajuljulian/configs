@@ -1,3 +1,4 @@
 nvim/.python-version
 tmux*.log
 Session*.vim
+.DS_Store
