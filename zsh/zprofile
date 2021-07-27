@@ -21,6 +21,10 @@ export PATH=$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/b
 #export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export FZF_DEFAULT_COMMAND='rg --files'
 
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
 ###################################
 ####### Useful functions ##########
 ###################################
