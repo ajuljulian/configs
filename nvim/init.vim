@@ -91,11 +91,10 @@ source ~/.config/nvim/vim-plug/plugins.vim
 
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
-source ~/.config/nvim/plug-config/nvim-tree.vim
 source ~/.config/nvim/plug-config/neoformat.vim
 
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
-
+luafile ~/.config/nvim/lua/plugins/nvim-tree.lua
 luafile ~/.config/nvim/lua/plugins/lspsaga.lua
 
 " Connect to launguage servers {{{

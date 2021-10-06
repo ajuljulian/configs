@@ -74,3 +74,6 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Toggle cursor column highlight
 nnoremap <Leader>c :set cursorcolumn!<CR>
+
+nnoremap <C-Z> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
