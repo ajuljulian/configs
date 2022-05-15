@@ -1,3 +1,5 @@
+lua require('keymappings')
+
 " shortcut to turn off highlighting after a search (related to hlsearch)
 nnoremap <esc><esc> :silent! nohls<cr>
 
@@ -6,18 +8,6 @@ noremap <leader>b :ls<CR>:b<Space>
 
 " shortcuts to edit the vimrc file in a split window
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-
-" Go to tab by tab number
-noremap <leader>1 1gt
-noremap <leader>2 2gt
-noremap <leader>3 3gt
-noremap <leader>4 4gt
-noremap <leader>5 5gt
-noremap <leader>6 6gt
-noremap <leader>7 7gt
-noremap <leader>8 8gt
-noremap <leader>9 9gt
-noremap <leader>0 :tablast<cr>
 
 " shortcut to convert the current word to UPPERCASE in insert mode
 inoremap <leader>u <esc>viwUi
@@ -65,12 +55,6 @@ vnoremap <silent><leader>ca :<C-U>lua require('lspsaga.codeaction').range_code_a
 " or use command
 nnoremap <silent><leader>ca :Lspsaga code_action<CR>
 vnoremap <silent><leader>ca :<C-U>Lspsaga range_code_action<CR>
-
-" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Toggle cursor column highlight
 nnoremap <Leader>c :set cursorcolumn!<CR>

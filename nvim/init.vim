@@ -1,46 +1,6 @@
+lua require('basic')
+
 set nocompatible
-
-" Control number of spaces inserted when tab key is pressed
-set tabstop=2
-
-" Number of spaces inserted for indentation
-set shiftwidth=2
-
-" Insert spaces whenever tab key is pressed
-set expandtab
-
-" Activate line numbering
-set number
-
-" Automatically indent the next line to match the current line's indentation
-set autoindent
-
-" Highlight the cursor line
-set cursorline
-
-" Highlight search results
-set hlsearch
-
-" Adjust default color group
-set background=dark
-
-" Automatically read a file again when vim detects that the file has changed
-" outside of vim
-set autoread
-
-" Prevent line numbers from being copied when selecting with the mouse
-set mouse+=a
-
-" Alias unnamed register to the + register to make copying and pasting to the
-" system clipboard easier
-set clipboard=unnamedplus
-
-" Control the position of a new window
-set splitbelow
-set splitright
-
-" Avoid showing message extra message when using completion
-set shortmess+=c
 
 colorscheme default
 highlight Comment cterm=italic gui=italic
