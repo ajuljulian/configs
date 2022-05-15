@@ -33,7 +33,7 @@ vim.opt.cursorline = true
 vim.opt.hlsearch = true
 
 -- Adjust default color group
-vim.opt.background = dark
+vim.opt.background = "dark"
 
 -- Automatically read a file again when vim detects that the file has changed
 -- outside of vim
