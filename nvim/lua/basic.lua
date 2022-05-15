@@ -2,6 +2,15 @@ print('hello from basic.lua')
 
 --vim.opt.nocompatible = true
 
+-- Enable syntax highlighting
+vim.cmd 'syntax enable'
+
+vim.cmd 'filetype plugin indent on'
+
+-- Define leader and local leader
+vim.g.mapleader = ' '
+vim.g.localleader = '\\'
+
 -- Control number of spaces inserted when tab key is pressed
 vim.opt.tabstop = 2
 

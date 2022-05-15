@@ -5,11 +5,6 @@ set nocompatible
 colorscheme default
 highlight Comment cterm=italic gui=italic
 
-" Enable syntax highlighting
-syntax enable
-
-filetype plugin indent on
-
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
 
@@ -19,10 +14,6 @@ augroup filetype_vim
   autocmd FileType vim setlocal foldmethod=marker
 augroup END
 " }}}
-
-" Define leader and local leader
-let mapleader = "\<space>"
-let maplocalleader = "\\"
 
 " Automatically reload file in vim as soon as it changes on disk.
 ":set autoread | au CursorHold * checktime | call feedkeys("lh")
