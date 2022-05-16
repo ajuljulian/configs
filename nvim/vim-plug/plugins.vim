@@ -59,6 +59,7 @@ Plug 'slashmili/alchemist.vim'
 Plug 'mhinz/vim-mix-format'
 
 " Collection of common configurations for Neovim's built-in language server client
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 

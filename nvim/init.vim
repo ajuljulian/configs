@@ -2,7 +2,7 @@ lua require('basic')
 
 set nocompatible
 
-colorscheme default
+colorscheme desert
 highlight Comment cterm=italic gui=italic
 
 " Set completeopt to have a better completion experience
@@ -48,15 +48,8 @@ luafile ~/.config/nvim/lua/plugins/compe-config.lua
 luafile ~/.config/nvim/lua/plugins/nvim-tree.lua
 luafile ~/.config/nvim/lua/plugins/lspsaga.lua
 
-" Connect to launguage servers {{{
-"luafile ~/.config/nvim/lua/lsp/python-ls.lua
-"luafile ~/.config/nvim/lua/lsp/ts-ls.lua
-luafile ~/.config/nvim/lua/lsp/elixir-ls.lua
-luafile ~/.config/nvim/lua/lsp/bash-ls.lua
+" Connect to language servers
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
-luafile ~/.config/nvim/lua/lsp/lua-ls.lua
-luafile ~/.config/nvim/lua/lsp/golang-ls.lua
-" }}}
 
 " vim-mix-format
 let g:mix_format_on_save = 1
@@ -69,7 +62,7 @@ let g:mix_format_silent_errors = 0
 " background color of floating windows.  I'm not sure if it's the correct way
 " of doing it, but seems to be working.
 if !has("gui_running")
-    colorscheme default
+    colorscheme desert
     " for which-key and floatwindow of fzf
     highlight Pmenu guibg=#3A3A3A
 endif

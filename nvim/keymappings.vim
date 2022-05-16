@@ -1,21 +1,21 @@
 lua require('keymappings')
 
-" shortcut to turn off highlighting after a search (related to hlsearch)
+" Shortcut to turn off highlighting after a search (related to hlsearch)
 nnoremap <esc><esc> :silent! nohls<cr>
 
 " Pressing <Leader>b will list the available buffers and prepare :b
 noremap <leader>b :ls<CR>:b<Space>
 
-" shortcuts to edit the vimrc file in a split window
+" Shortcuts to edit the vimrc file in a split window
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
-" shortcut to convert the current word to UPPERCASE in insert mode
+" Shortcut to convert the current word to UPPERCASE in insert mode
 inoremap <leader>u <esc>viwUi
 
-" shortcut to convert the current word to UPPERCASE in normal mode
+" Shortcut to convert the current word to UPPERCASE in normal mode
 nnoremap <leader>u viwUe
 
-" keymap Split
+" Keymap Split
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -33,23 +33,23 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " Use <leader>q to close buffer
 nnoremap <leader>q :q<CR>
 
-" source init.vim file
+" Source init.vim file
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" trigger vim-which-key if no other key is pressed 1000ms after pressing the
+" Trigger vim-which-key if no other key is pressed 1000ms after pressing the
 " leader key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
-" move among buffers with CTRL
+" Move among buffers with CTRL
 map <C-K> :bnext<CR>
 map <C-J> :bprev<CR>
 
-" lsp provider to find the cursor word definition and reference
+" LSP provider to find the cursor word definition and reference
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 " or use command LspSagaFinder
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 
-" code action
+" Code action
 nnoremap <silent><leader>ca <cmd>lua require('lspsaga.codeaction').code_action()<CR>
 vnoremap <silent><leader>ca :<C-U>lua require('lspsaga.codeaction').range_code_action()<CR>
 " or use command

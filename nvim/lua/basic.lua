@@ -1,4 +1,4 @@
-print('hello from basic.lua')
+--print('hello from basic.lua')
 
 --vim.opt.nocompatible = true
 
@@ -46,7 +46,7 @@ vim.opt.mouse = vim.opt.mouse + 'a'
 -- Alias unnamed register to the + register to make copying and pasting to the
 -- system clipboard easier
 --set clipboard=unnamedplus
-vim.opt.clipboard = unnamedplus
+vim.opt.clipboard = "unnamedplus"
 
 -- Control the position of a new window
 --set splitbelow

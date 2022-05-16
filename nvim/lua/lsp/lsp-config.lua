@@ -1,3 +1,14 @@
+--print('hello from lsp-config.lua')
+require("nvim-lsp-installer").setup({
+    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+    ui = {
+        icons = {
+            server_installed = "✓",
+            server_pending = "➜",
+            server_uninstalled = "✗"
+        }
+    }
+})
 local nvim_lsp = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
@@ -35,7 +46,18 @@ end
 
 -- Use a loop to conveniently both setup defined servers
 -- and map buffer local keybindings when the language server attaches
-local servers = { "pyright", "tsserver" }
+local servers = { "pyright", "tsserver", "gopls", "sumneko_lua"}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
+
+nvim_lsp["sumneko_lua"].setup {
+  settings = {
+    Lua = {
+      diagnostics =  {
+       globals = {'vim'}
+      }
+   }
+  }
+}
+
