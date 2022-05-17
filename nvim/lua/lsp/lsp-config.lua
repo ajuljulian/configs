@@ -22,7 +22,6 @@ local on_attach = function(client, bufnr)
 
   -- Mappings.
   local opts = { noremap=true, silent=true }
-
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
   buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
@@ -46,7 +45,7 @@ end
 
 -- Use a loop to conveniently both setup defined servers
 -- and map buffer local keybindings when the language server attaches
-local servers = { "pyright", "tsserver", "gopls", "sumneko_lua"}
+local servers = { "pyright", "tsserver", "gopls"}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
@@ -58,6 +57,7 @@ nvim_lsp["sumneko_lua"].setup {
        globals = {'vim'}
       }
    }
-  }
+  },
+  on_attach = on_attach
 }
 
