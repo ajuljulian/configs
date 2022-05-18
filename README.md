@@ -22,12 +22,14 @@ And let's say the neovim config file is under `~/.config/nvim`
 
 1. ranger: `brew install ranger`
 1. ripgrep: `brew install ripgrep`
+1. fd: `brew install fd`
 1. LSP
    1. python: `$ npm i -g pyright`
    1. typescript: `$ npm install -g typescript typescript-language-server`
    1. bash: `$ npm i -g bash-language-server`
    1. golang: `$ brew install go && brew install gopls`
-1. Prettier (Neovim): `npm install --global prettier`
+   1. Prettier (Neovim): `npm install --global prettier`
+   1. Lua-fmt: `npm install --global lua-fmt`
 
 ## Nerd Fonts
 
