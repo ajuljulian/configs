@@ -1,9 +1,13 @@
+" Slowly moving settings from vimL to lua. Putting them in  `basic.lua` for now.
 lua require('basic')
 
+" Use vim settings rather than vi settings.  Is this even needed nowadays?
 set nocompatible
 
 colorscheme desert
-highlight Comment cterm=italic gui=italic
+
+" Without this, menus such as which-key's have an annoying purple background.
+highlight Pmenu guibg=#3A3A3A
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
@@ -59,26 +63,9 @@ let g:mix_format_on_save = 1
 " You can see the stacktrace via :messages
 let g:mix_format_silent_errors = 0
 
-" Disable theme in terminal vim - this is getting rid of the annoying purple
-" background color of floating windows.  I'm not sure if it's the correct way
-" of doing it, but seems to be working.
-if !has("gui_running")
-    colorscheme desert
-    " for which-key and floatwindow of fzf
-    highlight Pmenu guibg=#3A3A3A
-endif
-
 " Lightbulb
 autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
 
 " Don't automatically insert a comment character after hitting <Enter>
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Comment out a line
-autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
-" }}}
-"
-command! Scratch lua require'tools'.makeScratch()
-command! Hello lua require'tools'.hello()
-command! CurLine lua require'tools'.currentLineInfo()
-command! PrintCurLine lua require'tools'.printCurLine()
