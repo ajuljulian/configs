@@ -1,6 +1,11 @@
 local cmp = require "cmp"
 local lspkind = require("lspkind")
 
+local check_backspace = function()
+    local col = vim.fn.col "." - 1
+    return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
+end
+
 cmp.setup(
     {
         snippet = {
@@ -10,36 +15,49 @@ cmp.setup(
         },
         window = {},
         mapping = {
-            ["<C-n>"] = cmp.mapping.select_next_item {behavior = cmp.SelectBehavior.Insert},
-            ["<C-p>"] = cmp.mapping.select_prev_item {behavior = cmp.SelectBehavior.Insert},
+            ["<CR>"] = cmp.mapping.confirm {select = true},
             ["<C-d>"] = cmp.mapping.scroll_docs(-4),
             ["<C-f>"] = cmp.mapping.scroll_docs(4),
-            ["<C-e>"] = cmp.mapping.abort(),
-            ["<c-y>"] = cmp.mapping(
-                cmp.mapping.confirm {
-                    behavior = cmp.ConfirmBehavior.Insert,
-                    select = true
-                },
-                {"i", "c"}
-            ),
-            ["<c-space>"] = cmp.mapping {
-                i = cmp.mapping.complete(),
-                c = function(_ --[[fallback]])
-                    if cmp.visible() then
-                        if not cmp.confirm {select = true} then
-                            return
-                        end
-                    else
-                        cmp.complete()
-                    end
-                end
+            ["<C-p>"] = cmp.mapping.select_prev_item {behavior = cmp.SelectBehavior.Select},
+            ["<C-n>"] = cmp.mapping.select_next_item {behavior = cmp.SelectBehavior.Select},
+            ["<C-e>"] = cmp.mapping {
+                i = cmp.mapping.abort(),
+                c = cmp.mapping.close()
             },
-            ["<tab>"] = cmp.config.disable,
-            -- Testing
-            ["<c-q>"] = cmp.mapping.confirm {
-                behavior = cmp.ConfirmBehavior.Replace,
-                select = true
-            }
+            ["<Tab>"] = cmp.mapping(
+                function(fallback)
+                    local luasnip = require "luasnip"
+                    if cmp.visible() then
+                        cmp.select_next_item()
+                    elseif luasnip.expandable() then
+                        luasnip.expand()
+                    elseif luasnip.expand_or_jumpable() then
+                        luasnip.expand_or_jump()
+                    elseif check_backspace() then
+                        fallback()
+                    else
+                        fallback()
+                    end
+                end,
+                {"i", "s"}
+            ),
+            ["<S-Tab>"] = cmp.mapping(
+                function(fallback)
+                    local luasnip = require "luasnip"
+                    if cmp.visible() then
+                        cmp.select_prev_item()
+                    elseif luasnip.expandable() then
+                        luasnip.expand()
+                    elseif luasnip.expand_or_jumpable() then
+                        luasnip.expand_or_jump()
+                    elseif check_backspace() then
+                        fallback()
+                    else
+                        fallback()
+                    end
+                end,
+                {"i", "s"}
+            )
         },
         formatting = {
             format = lspkind.cmp_format(
