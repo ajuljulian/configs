@@ -3,13 +3,13 @@
 --vim.opt.nocompatible = true
 
 -- Enable syntax highlighting
-vim.cmd 'syntax enable'
+vim.cmd "syntax enable"
 
-vim.cmd 'filetype plugin indent on'
+vim.cmd "filetype plugin indent on"
 
 -- Define leader and local leader
-vim.g.mapleader = ' '
-vim.g.localleader = '\\'
+vim.g.mapleader = " "
+vim.g.localleader = "\\"
 
 -- Control number of spaces inserted when tab key is pressed
 vim.opt.tabstop = 2
@@ -41,7 +41,7 @@ vim.opt.autoread = true
 
 -- Prevent line numbers from being copied when selecting with the mouse
 --set mouse+=a
-vim.opt.mouse = vim.opt.mouse + 'a'
+vim.opt.mouse = vim.opt.mouse + "a"
 
 -- Alias unnamed register to the + register to make copying and pasting to the
 -- system clipboard easier
@@ -49,14 +49,12 @@ vim.opt.mouse = vim.opt.mouse + 'a'
 vim.opt.clipboard = "unnamedplus"
 
 -- Control the position of a new window
---set splitbelow
---set splitright
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Avoid showing message extra message when using completion
 --set shortmess+=c
-vim.opt.shortmess = vim.opt.shortmess + 'c'
+vim.opt.shortmess = vim.opt.shortmess + "c"
 
 -- Enable LSP logging. Check the log files using `:lua vim.cmd('e'..vim.lsp.get_log_path())`
 vim.lsp.set_log_level("debug")

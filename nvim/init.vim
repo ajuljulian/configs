@@ -9,6 +9,9 @@ colorscheme desert
 " Without this, menus such as which-key's have an annoying purple background.
 highlight Pmenu guibg=#3A3A3A
 
+" Set color of cursor showing on the sign column
+highlight CursorLineSign guibg=orange
+
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
 
@@ -52,6 +55,9 @@ luafile ~/.config/nvim/lua/plugins/nvim-cmp-config.lua
 luafile ~/.config/nvim/lua/plugins/lua-snippets.lua
 luafile ~/.config/nvim/lua/plugins/nvim-tree.lua
 luafile ~/.config/nvim/lua/plugins/lspsaga.lua
+
+" Git decorations
+luafile ~/.config/nvim/lua/plugins/gitsigns.lua
 
 " Connect to language servers
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua

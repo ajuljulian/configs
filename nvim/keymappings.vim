@@ -41,8 +41,8 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
 " Move among buffers with CTRL
-map <C-N> :bnext<CR>
-map <C-B> :bprev<CR>
+map <S-L> :bnext<CR>
+map <S-H> :bprev<CR>
 
 " LSP provider to find the cursor word definition and reference
 nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>

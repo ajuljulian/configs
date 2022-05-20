@@ -45,7 +45,10 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'jiangmiao/auto-pairs'
 
 " Show git diff in the sign column
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
+
+" Git decorations
+Plug 'lewis6991/gitsigns.nvim'
 
 " Automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'Raimondi/delimitMate'
