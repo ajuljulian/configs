@@ -79,7 +79,7 @@ Plug 'mhinz/vim-mix-format'
 " Collection of common configurations for Neovim's built-in language server client
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim'
+Plug 'tami5/lspsaga.nvim'
 Plug 'onsails/lspkind.nvim'
 
 " Auto-completion
