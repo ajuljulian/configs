@@ -57,7 +57,8 @@ vim.opt.splitright = true
 vim.opt.shortmess = vim.opt.shortmess + "c"
 
 -- Enable LSP logging. Check the log files using `:lua vim.cmd('e'..vim.lsp.get_log_path())`
-vim.lsp.set_log_level("debug")
+-- -- Keeping it commented out because it slowls things down.
+-- vim.lsp.set_log_level("debug")
 
 --require('autocommands.example1')
 --require('autocommands.example2')

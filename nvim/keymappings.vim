@@ -36,10 +36,6 @@ nnoremap <leader>q :q<CR>
 " Source init.vim file
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" Trigger vim-which-key if no other key is pressed 1000ms after pressing the
-" leader key
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
-
 " Move among buffers with CTRL
 map <S-L> :bnext<CR>
 map <S-H> :bprev<CR>

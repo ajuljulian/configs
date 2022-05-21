@@ -2,7 +2,8 @@ local cmp = require "cmp"
 local lspkind = require("lspkind")
 
 local has_words_before = function()
-    local line, col = table.unpack(vim.api.nvim_win_get_cursor(0))
+    -- unpack seems to be deprecated.  However, replacing it with table.unpack is causing a crash when I press Tab in insert mode.
+    local line, col = unpack(vim.api.nvim_win_get_cursor(0))
     return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
@@ -16,7 +17,8 @@ cmp.setup(
         },
         window = {},
         mapping = {
-            ["<CR>"] = cmp.mapping.confirm {select = true},
+            ["<CR>"] = cmp.mapping.confirm {select = false},
+            -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
             ["<C-d>"] = cmp.mapping.scroll_docs(-4),
             ["<C-f>"] = cmp.mapping.scroll_docs(4),
             ["<C-p>"] = cmp.mapping.select_prev_item {behavior = cmp.SelectBehavior.Select},
@@ -76,7 +78,7 @@ cmp.setup(
 -- Setup lspconfig.
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local servers = {"pyright", "tsserver", "gopls", "sumneko_lua"}
+local servers = {"pyright", "tsserver", "gopls", "sumneko_lua", "elixirls"}
 for _, lsp in ipairs(servers) do
     require("lspconfig")[lsp].setup {
         capabilities = capabilities

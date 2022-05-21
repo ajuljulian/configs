@@ -1,56 +1,71 @@
 call plug#begin('~/.vim/plugged')
 
 " Javascript bundle.  Provides syntax highlighting and indentation
+" source: https://github.com/pangloss/vim-javascript
 Plug 'pangloss/vim-javascript'
 
 " Git support
+" source: https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-fugitive'
 
 " File explorer written in lua
+" source: https://github.com/kyazdani42/nvim-tree.lua
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Status/tabline for vim
+" source: https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Color preview
+" source: https://github.com/gko/vim-coloresque
 Plug 'gorodinskiy/vim-coloresque'
 
 " Wrapper for Prettier
+" source: https://github.com/prettier/vim-prettier
 Plug 'prettier/vim-prettier'
 
 " React syntax highlighting and indenting
+" source: https://github.com/MaxMEllon/vim-jsx-pretty
 Plug 'maxmellon/vim-jsx-pretty'
 
 " Comment stuff out
+" source: https://github.com/tpope/vim-commentary
 Plug 'tpope/vim-commentary'
 
 " Asynchronous lint engine
+" source: https://github.com/dense-analysis/ale
 Plug 'dense-analysis/ale'
 
 " Formatting code
+" source: https://github.com/sbdchd/neoformat
 Plug 'sbdchd/neoformat'
 
 " Display thin vertical lines at each indentation level
 Plug 'Yggdroot/indentLine'
 
 " Use ripgrep in vim
+" source: https://github.com/Yggdroot/indentLine
 Plug 'jremmen/vim-ripgrep'
 
 " Highlight trailing whitespaces in red
+" source: https://github.com/bronson/vim-trailing-whitespace
 Plug 'bronson/vim-trailing-whitespace'
 
 " Insert or delete brackets, parens, quotes in pair
 Plug 'jiangmiao/auto-pairs'
 
 " Tokyo Night theme
+" source: https://github.com/jiangmiao/auto-pairs
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " Git decorations
+" source: https://github.com/lewis6991/gitsigns.nvim
 Plug 'lewis6991/gitsigns.nvim'
 
 " Automatic closing of quotes, parenthesis, brackets, etc.
+" source: https://github.com/Raimondi/delimitMate
 Plug 'Raimondi/delimitMate'
 
 " Python code folding
@@ -102,9 +117,6 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " Fancy start screen
 Plug 'mhinz/vim-startify'
-
-" Display available keybindings in popup
-Plug 'liuchengxu/vim-which-key'
 
 " Ranger integration
 Plug 'francoiscabrol/ranger.vim'
