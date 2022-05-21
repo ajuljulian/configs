@@ -44,8 +44,8 @@ Plug 'bronson/vim-trailing-whitespace'
 " Insert or delete brackets, parens, quotes in pair
 Plug 'jiangmiao/auto-pairs'
 
-" Show git diff in the sign column
-"Plug 'airblade/vim-gitgutter'
+" Tokyo Night theme
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " Git decorations
 Plug 'lewis6991/gitsigns.nvim'

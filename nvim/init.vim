@@ -3,14 +3,13 @@ lua require('basic')
 
 " Use vim settings rather than vi settings.  Is this even needed nowadays?
 set nocompatible
-
-colorscheme desert
+" colorscheme desert
 
 " Without this, menus such as which-key's have an annoying purple background.
 highlight Pmenu guibg=#3A3A3A
 
 " Set color of cursor showing on the sign column
-highlight CursorLineSign guibg=orange
+" highlight CursorLineSign guibg=orange
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
@@ -37,15 +36,20 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 
 autocmd QuickFixCmdPost *grep* cwindow
 
+" Plugins {{{
+source ~/.config/nvim/vim-plug/plugins.vim
+" }}}
+
+" Set theme. For Tokyonight, this has to happen after sourcing the vim-plug/plugins.vim file.
+let g:tokyonight_style = "storm"
+colorscheme tokyonight
+
 " Ale
 let b:ale_fixers = ['prettier', 'eslint']
 
 " Load shortcuts
 source ~/.config/nvim/keymappings.vim
 
-" Plugins {{{
-source ~/.config/nvim/vim-plug/plugins.vim
-" }}}
 
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
