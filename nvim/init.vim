@@ -41,8 +41,8 @@ source ~/.config/nvim/vim-plug/plugins.vim
 " }}}
 
 " Set theme. For Tokyonight, this has to happen after sourcing the vim-plug/plugins.vim file.
-let g:tokyonight_style = "night"
-colorscheme tokyonight
+" let g:tokyonight_style = "night"
+" colorscheme tokyonight
 
 " Without this, menus such as which-key's have an annoying purple background when using themes such as desert.
  highlight Pmenu guibg=#3A3A3A
@@ -62,6 +62,7 @@ luafile ~/.config/nvim/lua/plugins/nvim-cmp-config.lua
 luafile ~/.config/nvim/lua/plugins/lua-snippets.lua
 luafile ~/.config/nvim/lua/plugins/nvim-tree.lua
 luafile ~/.config/nvim/lua/plugins/lspsaga.lua
+luafile ~/.config/nvim/lua/plugins/tokyonight.lua
 
 " Git decorations
 luafile ~/.config/nvim/lua/plugins/gitsigns.lua
