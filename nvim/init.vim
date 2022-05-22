@@ -40,10 +40,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 source ~/.config/nvim/vim-plug/plugins.vim
 " }}}
 
-" Set theme. For Tokyonight, this has to happen after sourcing the vim-plug/plugins.vim file.
-" let g:tokyonight_style = "night"
-" colorscheme tokyonight
-
 " Without this, menus such as which-key's have an annoying purple background when using themes such as desert.
  highlight Pmenu guibg=#3A3A3A
 

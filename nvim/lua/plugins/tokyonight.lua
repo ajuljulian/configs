@@ -1,4 +1,5 @@
-vim.g.tokyonight_style = "storm"
+-- Set theme. For Tokyonight, this has to happen after sourcing the vim-plug/plugins.vim file.
+vim.g.tokyonight_style = "night"
 vim.g.tokyonight_italic_functions = true
 vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
 
