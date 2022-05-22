@@ -47,6 +47,7 @@ source ~/.config/nvim/keymappings.vim
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/neoformat.vim
 
+luafile ~/.config/nvim/lua/plugins/treesitter.lua
 luafile ~/.config/nvim/lua/plugins/nvim-cmp-config.lua
 luafile ~/.config/nvim/lua/plugins/lua-snippets.lua
 luafile ~/.config/nvim/lua/plugins/nvim-tree.lua
