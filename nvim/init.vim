@@ -4,10 +4,6 @@ lua require('basic')
 " Use vim settings rather than vi settings.  Is this even needed nowadays?
 set nocompatible
 
-" Without this, menus such as which-key's have an annoying purple background.
-" colorscheme desert
-" highlight Pmenu guibg=#3A3A3A
-
 " Set color of cursor showing on the sign column
 " highlight CursorLineSign guibg=orange
 
@@ -29,6 +25,10 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+" Without this, menus such as which-key's have an annoying purple background.
+colorscheme default
+highlight Pmenu guibg=#3A3A3A guifg=white
+
 let g:airline_theme='badwolf'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -39,9 +39,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Plugins {{{
 source ~/.config/nvim/vim-plug/plugins.vim
 " }}}
-
-" Without this, menus such as which-key's have an annoying purple background when using themes such as desert.
- highlight Pmenu guibg=#3A3A3A
 
 " Ale
 let b:ale_fixers = ['prettier', 'eslint']
