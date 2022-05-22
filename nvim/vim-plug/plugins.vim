@@ -60,6 +60,9 @@ Plug 'jiangmiao/auto-pairs'
 " source: https://github.com/jiangmiao/auto-pairs
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
+" OneDark theme
+Plug 'navarasu/onedark.nvim'
+
 " Git decorations
 " source: https://github.com/lewis6991/gitsigns.nvim
 Plug 'lewis6991/gitsigns.nvim'
