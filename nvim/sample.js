@@ -11,6 +11,8 @@ blogs.forEach((element) => {
   console.log(element);
 });
 
+console.log("Hello again!");
+
 for (let i = 0; i < array.length; i++) {
-  const element = array[i];
+  const blah = array[i];
 }
