@@ -4,6 +4,10 @@ call plug#begin('~/.vim/plugged')
 " source: https://github.com/pangloss/vim-javascript
 Plug 'pangloss/vim-javascript'
 
+" React syntax highlighting and indenting
+" source: https://github.com/MaxMEllon/vim-jsx-pretty
+Plug 'maxmellon/vim-jsx-pretty'
+
 " Git support
 " source: https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-fugitive'
@@ -25,10 +29,6 @@ Plug 'gorodinskiy/vim-coloresque'
 " Wrapper for Prettier
 " source: https://github.com/prettier/vim-prettier
 Plug 'prettier/vim-prettier'
-
-" React syntax highlighting and indenting
-" source: https://github.com/MaxMEllon/vim-jsx-pretty
-Plug 'maxmellon/vim-jsx-pretty'
 
 " Comment stuff out
 " source: https://github.com/tpope/vim-commentary
