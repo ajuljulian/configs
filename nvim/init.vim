@@ -4,9 +4,6 @@ lua require('basic')
 " Use vim settings rather than vi settings.  Is this even needed nowadays?
 set nocompatible
 
-" Set color of cursor showing on the sign column
-" highlight CursorLineSign guibg=orange
-
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noselect
 
@@ -37,7 +34,7 @@ source ~/.config/nvim/vim-plug/plugins.vim
 " }}}
 
 " Ale
-let b:ale_fixers = ['prettier', 'eslint']
+let g:ale_fixers = ['prettier', 'eslint']
 
 " Load shortcuts
 source ~/.config/nvim/keymappings.vim
