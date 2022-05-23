@@ -19,7 +19,10 @@ require("onedark").setup {
     },
     -- Custom Highlights --
     colors = {}, -- Override default colors
-    highlights = {}, -- Override highlight groups
+    highlights = {
+        -- Change the visual mode highlight color.  Otherwise, I'm having a hard time seeing what's selected.
+        Visual = {fg = "gray", bg = "white"}
+    }, -- Override highlight groups
     -- Plugins Config --
     diagnostics = {
         darker = true, -- darker colors for diagnostic
