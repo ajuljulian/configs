@@ -22,28 +22,20 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-let g:airline_theme='badwolf'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-
 autocmd QuickFixCmdPost *grep* cwindow
 
-" Plugins {{{
 source ~/.config/nvim/vim-plug/plugins.vim
-" }}}
-
-" Ale
-let g:ale_fixers = ['prettier', 'eslint']
 
 " Load shortcuts
 source ~/.config/nvim/keymappings.vim
-
 
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/neoformat.vim
 source ~/.config/nvim/plug-config/jsx-pretty.vim
+source ~/.config/nvim/plug-config/airline.vim
+source ~/.config/nvim/plug-config/ale.vim
+source ~/.config/nvim/plug-config/elixir-mix-format.vim
 
 luafile ~/.config/nvim/lua/plugins/treesitter.lua
 luafile ~/.config/nvim/lua/plugins/nvim-cmp-config.lua
@@ -60,13 +52,6 @@ luafile ~/.config/nvim/lua/plugins/gitsigns.lua
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 
 colorscheme onedark
-
-" vim-mix-format
-let g:mix_format_on_save = 1
-
-" Only show a short message in the command-line bar.
-" You can see the stacktrace via :messages
-let g:mix_format_silent_errors = 0
 
 " Lightbulb
 autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
