@@ -43,6 +43,7 @@ source ~/.config/nvim/keymappings.vim
 " Plugin configuration
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/neoformat.vim
+source ~/.config/nvim/plug-config/jsx-pretty.vim
 
 luafile ~/.config/nvim/lua/plugins/treesitter.lua
 luafile ~/.config/nvim/lua/plugins/nvim-cmp-config.lua
