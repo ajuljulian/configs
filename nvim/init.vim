@@ -37,19 +37,19 @@ source ~/.config/nvim/plug-config/airline.vim
 source ~/.config/nvim/plug-config/ale.vim
 source ~/.config/nvim/plug-config/elixir-mix-format.vim
 
-luafile ~/.config/nvim/lua/plugins/treesitter.lua
-luafile ~/.config/nvim/lua/plugins/nvim-cmp-config.lua
-luafile ~/.config/nvim/lua/plugins/lua-snippets.lua
-luafile ~/.config/nvim/lua/plugins/nvim-tree.lua
-luafile ~/.config/nvim/lua/plugins/lspsaga.lua
-luafile ~/.config/nvim/lua/plugins/tokyonight.lua
-luafile ~/.config/nvim/lua/plugins/onedark.lua
+lua require('plugins.treesitter')
+lua require('plugins.nvim-cmp-config')
+lua require('plugins.lua-snippets')
+lua require('plugins.nvim-tree')
+lua require('plugins.lspsaga')
+lua require('plugins.tokyonight')
+lua require('plugins.onedark')
 
 " Git decorations
-luafile ~/.config/nvim/lua/plugins/gitsigns.lua
+lua require('plugins.gitsigns')
 
 " Connect to language servers
-luafile ~/.config/nvim/lua/lsp/lsp-config.lua
+lua require('lsp.lsp-config')
 
 colorscheme onedark
 

@@ -31,8 +31,8 @@ Plug 'gorodinskiy/vim-coloresque'
 Plug 'prettier/vim-prettier'
 
 " Comment stuff out
-" source: https://github.com/tpope/vim-commentary
-Plug 'tpope/vim-commentary'
+" https://github.com/b3nj5m1n/kommentary
+Plug 'b3nj5m1n/kommentary'
 
 " Asynchronous lint engine
 " source: https://github.com/dense-analysis/ale
