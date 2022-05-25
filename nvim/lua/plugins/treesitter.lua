@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
-    ensure_installed = {"lua", "javascript", "python", "go"}, -- one of "all", "maintained" ((parsers with maintainers),  or a list of languages
+    ensure_installed = {"lua", "javascript", "python", "go", "elixir"}, -- one of "all", "maintained" ((parsers with maintainers),  or a list of languages
     sync_install = false,
     ignore_install = {""},
     highlight = {
