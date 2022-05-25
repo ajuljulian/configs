@@ -32,7 +32,7 @@ Plug 'prettier/vim-prettier'
 
 " Comment stuff out
 " https://github.com/b3nj5m1n/kommentary
-Plug 'b3nj5m1n/kommentary'
+Plug 'terrortylor/nvim-comment'
 
 " Asynchronous lint engine
 " source: https://github.com/dense-analysis/ale
