@@ -46,6 +46,7 @@ lua require('plugins.lspsaga')
 lua require('plugins.tokyonight')
 lua require('plugins.onedark')
 lua require('plugins.nvim-comment')
+lua require('plugins.hop')
 
 " Git decorations
 lua require('plugins.gitsigns')

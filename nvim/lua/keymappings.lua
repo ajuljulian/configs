@@ -17,3 +17,59 @@ vim.api.nvim_set_keymap("n", "<leader>ff", ':lua require("telescope.builtin").fi
 vim.api.nvim_set_keymap("n", "<leader>fg", ':lua require("telescope.builtin").live_grep()<cr>', {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>fb", ':lua require("telescope.builtin").buffers()<cr>', {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>fh", ':lua require("telescope.builtin").help_tags()<cr>', {noremap = true})
+
+-- hop keybindings
+vim.api.nvim_set_keymap(
+    "n",
+    "f",
+    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "n",
+    "F",
+    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "o",
+    "f",
+    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true, inclusive_jump = true })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "o",
+    "F",
+    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, inclusive_jump = true })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "",
+    "t",
+    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "",
+    "T",
+    "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>e",
+    "<cmd> lua require'hop'.hint_words({ hint_position = require'hop.hint'.HintPosition.END })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "v",
+    "<leader>e",
+    "<cmd> lua require'hop'.hint_words({ hint_position = require'hop.hint'.HintPosition.END })<cr>",
+    {}
+)
+vim.api.nvim_set_keymap(
+    "o",
+    "<leader>e",
+    "<cmd> lua require'hop'.hint_words({ hint_position = require'hop.hint'.HintPosition.END, inclusive_jump = true })<cr>",
+    {}
+)

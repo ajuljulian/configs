@@ -132,4 +132,8 @@ Plug 'rbgrouleff/bclose.vim'
 " source: https://github.com/fatih/vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+" EasyMotion like plugin allowing you to jump anywhere in a document with few keystrokes
+" https://github.com/phaazon/hop.nvim
+Plug 'phaazon/hop.nvim'
+
 call plug#end()
