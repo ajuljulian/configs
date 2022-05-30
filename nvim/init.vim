@@ -36,6 +36,7 @@ source ~/.config/nvim/plug-config/jsx-pretty.vim
 source ~/.config/nvim/plug-config/airline.vim
 source ~/.config/nvim/plug-config/ale.vim
 source ~/.config/nvim/plug-config/elixir-mix-format.vim
+source ~/.config/nvim/plug-config/vim-go.vim
 
 lua require('plugins.treesitter')
 lua require('plugins.nvim-cmp-config')

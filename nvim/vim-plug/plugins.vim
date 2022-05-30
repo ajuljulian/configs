@@ -128,4 +128,8 @@ Plug 'francoiscabrol/ranger.vim'
 " Delete a buffer without closing the window
 Plug 'rbgrouleff/bclose.vim'
 
+" Go language support
+" source: https://github.com/fatih/vim-go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()

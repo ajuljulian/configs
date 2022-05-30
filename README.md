@@ -17,6 +17,7 @@ And let's say the neovim config file is under `~/.config/nvim`
 1. Install all the plugins: `:PlugInstall`
 1. Run `:checkhealth` to see if there are any issues.
 1. Upgrade the nightly build with `$ brew reinstall neovim`
+1. Install go binaries needed by vim-go: `:GoInstallBinaries`
 
 ### External dependencies
 
