@@ -21,7 +21,11 @@ require("onedark").setup {
     colors = {}, -- Override default colors
     highlights = {
         -- Change the visual mode highlight color.  Otherwise, I'm having a hard time seeing what's selected.
-        Visual = {fg = "gray", bg = "white"}
+        Visual = {fg = "gray", bg = "white"},
+        -- Change the highlight color used by the hop plugin. Easier to see.
+        HopNextKey = {fg = "#ff9900"},
+        HopNextKey1 = {fg = "#ff9900"},
+        HopNextKey2 = {fg = "#ff9900"}
     }, -- Override highlight groups
     -- Plugins Config --
     diagnostics = {
