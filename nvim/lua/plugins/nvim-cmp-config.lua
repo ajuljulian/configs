@@ -71,7 +71,9 @@ cmp.setup(
         sources = {
             {name = "nvim_lsp"},
             {name = "luasnip"},
-            {name = "buffer", keyword_length = 5}
+            {name = "buffer", keyword_length = 5},
+            -- display function signatures with current parameter emphasized
+            {name = "nvim_lsp_signature_help"}
         }
     }
 )
