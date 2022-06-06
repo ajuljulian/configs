@@ -31,7 +31,7 @@ Plug 'gorodinskiy/vim-coloresque'
 Plug 'prettier/vim-prettier'
 
 " Comment stuff out
-" https://github.com/b3nj5m1n/kommentary
+" source: https://github.com/b3nj5m1n/kommentary
 Plug 'terrortylor/nvim-comment'
 
 " Asynchronous lint engine
@@ -132,6 +132,18 @@ Plug 'rbgrouleff/bclose.vim'
 " Go language support
 " source: https://github.com/fatih/vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" Debug Adapter Protocol client for Neovim
+" source: https://github.com/mfussenegger/nvim-dap
+Plug 'mfussenegger/nvim-dap'
+
+" nvim-dap extension for providing configurations for launching go debugger
+" source: https://github.com/leoluz/nvim-dap-go
+Plug 'leoluz/nvim-dap-go'
+
+" UI for nvim-dap 
+" source: https://github.com/rcarriga/nvim-dap-ui
+Plug 'rcarriga/nvim-dap-ui'
 
 " EasyMotion like plugin allowing you to jump anywhere in a document with few keystrokes
 " https://github.com/phaazon/hop.nvim
