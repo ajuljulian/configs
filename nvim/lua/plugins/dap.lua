@@ -28,6 +28,9 @@ require("dap-go").setup()
 -- nvim-dap-ui plugin configuration
 require("dapui").setup()
 
+-- nvim-dap-virtual-text configuration
+require("nvim-dap-virtual-text").setup()
+
 -- use nvim-dap events to open/close nvim-dap-ui windows automatically
 local dap, dapui = require("dap"), require("dapui")
 dap.listeners.after.event_initialized["dapui_config"] = function()

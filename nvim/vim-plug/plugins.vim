@@ -145,6 +145,10 @@ Plug 'leoluz/nvim-dap-go'
 " source: https://github.com/rcarriga/nvim-dap-ui
 Plug 'rcarriga/nvim-dap-ui'
 
+" Add virtual text support to nvim-dap
+" source: https://github.com/theHamsta/nvim-dap-virtual-text
+Plug 'theHamsta/nvim-dap-virtual-text'
+
 " EasyMotion like plugin allowing you to jump anywhere in a document with few keystrokes
 " https://github.com/phaazon/hop.nvim
 Plug 'phaazon/hop.nvim'
