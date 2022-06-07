@@ -1,7 +1,7 @@
 -- DAP (Debug Adapter Protocol) client implementation configuration.
--- Using one config file for all DAP related plugins.
+-- using one config file for all DAP related plugins.
 
--- Set debug-specific key mappings
+-- set debug-specific key mappings
 vim.api.nvim_set_keymap("n", "<F5>", ":lua require('dap').continue()<cr>", {noremap = true})
 vim.api.nvim_set_keymap("n", "<F1>", ":lua require('dap').step_over()<cr>", {noremap = true})
 vim.api.nvim_set_keymap("n", "<F2>", ":lua require('dap').step_into()<cr>", {noremap = true})
