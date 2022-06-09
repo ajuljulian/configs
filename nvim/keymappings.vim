@@ -34,7 +34,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 nnoremap <leader>q :q<CR>
 
 " Source init.vim file
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader><leader>s :source $MYVIMRC<cr>
 
 " Move among buffers with CTRL
 map <S-L> :bnext<CR>
