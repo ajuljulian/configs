@@ -59,6 +59,20 @@ Create a symlink from `~/.alacritty.yml` to `<project dir>/configs/alacritty.yml
 ln -s ~/Development/configs/alacritty.yml ~/.alacritty.yml
 ```
 
+## Kitty (terminal emulator)
+
+https://sw.kovidgoyal.net/kitty/
+
+```
+$ brew install --cask kitty
+```
+
+Create a symlink:
+
+```
+$ ln -s ~/Development/configs/kitty.conf ~/.conf/kitty/kitty.conf
+```
+
 ## Zsh
 
 Install:
