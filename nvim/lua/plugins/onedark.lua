@@ -1,5 +1,5 @@
 require("onedark").setup {
-    style = "deep",
+    style = "cool",
     transparent = true, -- Show/hide background
     term_colors = true, -- Change terminal color as per the selected theme style
     ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -22,6 +22,7 @@ require("onedark").setup {
     highlights = {
         -- Change the visual mode highlight color.  Otherwise, I'm having a hard time seeing what's selected.
         Visual = {fg = "gray", bg = "white"},
+        -- comment = {fg = "yellow", bg = "red"},
         -- Change the highlight color used by the hop plugin. Easier to see.
         HopNextKey = {fg = "#ff9900"},
         HopNextKey1 = {fg = "#ff9900"},

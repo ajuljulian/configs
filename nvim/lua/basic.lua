@@ -45,7 +45,6 @@ vim.opt.mouse = vim.opt.mouse + "a"
 
 -- Alias unnamed register to the + register to make copying and pasting to the
 -- system clipboard easier
---set clipboard=unnamedplus
 vim.opt.clipboard = "unnamedplus"
 
 -- Control the position of a new window
@@ -60,5 +59,5 @@ vim.opt.shortmess = vim.opt.shortmess + "c"
 -- -- Keeping it commented out because it slowls things down.
 -- vim.lsp.set_log_level("debug")
 
---require('autocommands.example1')
+-- require("autocommands.example1")
 --require('autocommands.example2')

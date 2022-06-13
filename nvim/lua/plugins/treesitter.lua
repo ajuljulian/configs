@@ -12,5 +12,19 @@ configs.setup {
         disable = {""}, -- list of languages that will be disabled
         additional_vim_regex_highlighting = true
     },
-    indent = {enable = true, disable = {""}}
+    indent = {enable = true, disable = {""}},
+    textobjects = {
+        select = {
+            enable = true,
+            -- Automatically jump forward to textobj, similar to targets.vim
+            lookahead = true,
+            keymaps = {
+                -- You can use the capture groups defined in textobjects.scm
+                ["af"] = "@function.outer",
+                ["if"] = "@function.inner",
+                ["ac"] = "@class.outer",
+                ["ic"] = "@class.inner"
+            }
+        }
+    }
 }

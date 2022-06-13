@@ -100,6 +100,7 @@ Plug 'rafamadriz/friendly-snippets'
 
 " Tree-sitter support
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'nvim-treesitter/playground'
 
 " Add icons to other plugins
