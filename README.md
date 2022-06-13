@@ -59,7 +59,7 @@ Create a symlink from `~/.alacritty.yml` to `<project dir>/configs/alacritty.yml
 ln -s ~/Development/configs/alacritty.yml ~/.alacritty.yml
 ```
 
-## Kitty (terminal emulator)
+## Kitty (terminal emulator, supports ligatures)
 
 https://sw.kovidgoyal.net/kitty/
 
