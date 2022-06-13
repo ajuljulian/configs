@@ -21,8 +21,9 @@ require("onedark").setup {
     colors = {}, -- Override default colors
     highlights = {
         -- Change the visual mode highlight color.  Otherwise, I'm having a hard time seeing what's selected.
-        Visual = {fg = "gray", bg = "white"},
-        -- comment = {fg = "yellow", bg = "red"},
+        Visual = {fg = "gray", bg = "blue"},
+        -- Change comment highlight color.  For transparent background to work, you need to set TERM to screen-256color, not xterm-256color.
+        comment = {fg = "gray", bg = "NONE"},
         -- Change the highlight color used by the hop plugin. Easier to see.
         HopNextKey = {fg = "#ff9900"},
         HopNextKey1 = {fg = "#ff9900"},
