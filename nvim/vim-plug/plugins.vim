@@ -142,7 +142,7 @@ Plug 'mfussenegger/nvim-dap'
 " source: https://github.com/leoluz/nvim-dap-go
 Plug 'leoluz/nvim-dap-go'
 
-" UI for nvim-dap 
+" UI for nvim-dap
 " source: https://github.com/rcarriga/nvim-dap-ui
 Plug 'rcarriga/nvim-dap-ui'
 
