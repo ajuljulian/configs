@@ -1,5 +1,3 @@
---print('hello from basic.lua')
-
 --vim.opt.nocompatible = true
 
 -- Enable syntax highlighting
@@ -52,7 +50,6 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Avoid showing message extra message when using completion
---set shortmess+=c
 vim.opt.shortmess = vim.opt.shortmess + "c"
 
 -- Enable LSP logging. Check the log files using `:lua vim.cmd('e'..vim.lsp.get_log_path())`

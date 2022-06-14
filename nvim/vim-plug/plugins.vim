@@ -154,4 +154,8 @@ Plug 'theHamsta/nvim-dap-virtual-text'
 " https://github.com/phaazon/hop.nvim
 Plug 'phaazon/hop.nvim'
 
+" Github copilot
+" source: https://github.com/github/copilot-docs
+" Plug 'github/copilot.vim'
+
 call plug#end()
