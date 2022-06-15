@@ -9,9 +9,6 @@ noremap <leader>b :ls<CR>:b<Space>
 " Shortcuts to edit the vimrc file in a split window
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
-" Shortcut to convert the current word to UPPERCASE in insert mode
-inoremap <leader>u <esc>viwUi
-
 " Shortcut to convert the current word to UPPERCASE in normal mode
 nnoremap <leader>u viwUe
 
