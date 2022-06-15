@@ -1,6 +1,6 @@
 # What is this?
 
-I use these dotfiles on all my machines. I try to aggregate as much of my Dotfiles in one location and create symlinks to them from their expected locations.
+I use these dotfiles on all my machines. I try to aggregate as much of my Dotfiles in one location and create symlinks to them from their expected locations. These are specific to my setup on my mac (for example, my usage of `homebrew`), but should mostly apply to other OSes as well.
 
 ## Neovim
 
@@ -45,7 +45,7 @@ $ brew install --cask font-hack-nerd-font
 
 Note: make sure your terminal is set to this font. For example, in the alacritty.yml config file, I've set the font explicitly to Hack Nerd Font Mono.
 
-## Alacritty (terminal emulator)
+## Alacritty (terminal emulator, does not support ligatures it looks like)
 
 https://github.com/alacritty/alacritty
 
@@ -73,7 +73,7 @@ Create a symlink:
 $ ln -s ~/Development/configs/kitty.conf ~/.conf/kitty/kitty.conf
 ```
 
-## Zsh
+## Zsh (Oh My Zsh, specifically)
 
 Install:
 
