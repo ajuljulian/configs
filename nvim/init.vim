@@ -45,6 +45,7 @@ lua require('plugins.nvim-tree')
 lua require('plugins.lspsaga')
 lua require('plugins.tokyonight')
 lua require('plugins.onedark')
+lua require('plugins.material')
 lua require('plugins.nvim-comment')
 lua require('plugins.hop')
 lua require('plugins.dap')
@@ -56,6 +57,7 @@ lua require('plugins.gitsigns')
 lua require('lsp.lsp-config')
 
 colorscheme onedark
+" colorscheme material
 
 " Lightbulb
 autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()

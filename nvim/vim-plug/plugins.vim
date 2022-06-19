@@ -63,6 +63,9 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " OneDark theme
 Plug 'navarasu/onedark.nvim'
 
+" Material theme
+" source: https://github.com/marko-cerovac/material.nvim
+Plug 'marko-cerovac/material.nvim'
 " Git decorations
 " source: https://github.com/lewis6991/gitsigns.nvim
 Plug 'lewis6991/gitsigns.nvim'

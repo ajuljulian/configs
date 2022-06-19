@@ -52,6 +52,9 @@ vim.opt.splitright = true
 -- Avoid showing message extra message when using completion
 vim.opt.shortmess = vim.opt.shortmess + "c"
 
+-- styles available: darker, lighter, oceanic, palenight, deep ocean
+vim.g.material_style = "lighter"
+
 -- Enable LSP logging. Check the log files using `:lua vim.cmd('e'..vim.lsp.get_log_path())`
 -- -- Keeping it commented out because it slowls things down.
 -- vim.lsp.set_log_level("debug")
