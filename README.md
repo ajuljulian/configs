@@ -73,6 +73,18 @@ Create a symlink:
 $ ln -s ~/Development/configs/kitty.conf ~/.conf/kitty/kitty.conf
 ```
 
+## Lazygit
+
+https://github.com/jesseduffield/lazygit
+
+On Macs, lazygit keeps its configuration in ~/Library/Application Suppoer/lazygit/config.yml
+
+Create a symlink:
+
+```
+$ ln -s ~/Development/configs/lazygit.conf config.yml
+```
+
 ## Zsh (Oh My Zsh, specifically)
 
 Install:
