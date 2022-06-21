@@ -77,7 +77,7 @@ $ ln -s ~/Development/configs/kitty.conf ~/.conf/kitty/kitty.conf
 
 https://github.com/jesseduffield/lazygit
 
-On Macs, lazygit keeps its configuration in ~/Library/Application Suppoer/lazygit/config.yml
+On Macs, lazygit keeps its configuration in ~/Library/Application Support/lazygit/config.yml
 
 Create a symlink:
 
