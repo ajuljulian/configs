@@ -157,6 +157,10 @@ Plug 'theHamsta/nvim-dap-virtual-text'
 " https://github.com/phaazon/hop.nvim
 Plug 'phaazon/hop.nvim'
 
+" Use neovim terminal in floating/popup window
+" source: https://github.com/voldikss/vim-floaterm
+Plug 'voldikss/vim-floaterm'
+
 " Github copilot
 " source: https://github.com/github/copilot-docs
 " Plug 'github/copilot.vim'

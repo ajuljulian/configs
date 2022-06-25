@@ -54,3 +54,6 @@ nnoremap <Leader>c :set cursorcolumn!<CR>
 
 nnoremap <C-Z> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
+
+nnoremap <silent> <leader>ft :FloatermNew<CR>
+tnoremap <silent> <leader>ft <C-\><C-n>:FloatermNew<CR>
