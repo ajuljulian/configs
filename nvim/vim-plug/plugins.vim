@@ -43,6 +43,7 @@ Plug 'dense-analysis/ale'
 Plug 'sbdchd/neoformat'
 
 " Display thin vertical lines at each indentation level
+" source: https://github.com/Yggdroot/indentLine
 Plug 'Yggdroot/indentLine'
 
 " Use ripgrep in vim
@@ -69,6 +70,10 @@ Plug 'marko-cerovac/material.nvim'
 " Git decorations
 " source: https://github.com/lewis6991/gitsigns.nvim
 Plug 'lewis6991/gitsigns.nvim'
+
+" Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
+" source: https://github.com/sindrets/diffview.nvim
+Plug 'sindrets/diffview.nvim'
 
 " Automatic closing of quotes, parenthesis, brackets, etc.
 " source: https://github.com/Raimondi/delimitMate
