@@ -5,6 +5,7 @@ let g:neoformat_verbose = 0
 let g:neoformat_enabled_javascript = ['prettier', 'eslint_d']
 let g:neoformat_enabled_python = ['autopep8', 'yapf', 'docformatter']
 let g:neoformat_enabled_css = ['prettier']
+let g:neoformat_enabled_yaml = ['prettier']
 
 augroup fmt
   autocmd!
