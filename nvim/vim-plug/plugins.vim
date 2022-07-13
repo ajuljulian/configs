@@ -166,6 +166,10 @@ Plug 'phaazon/hop.nvim'
 " source: https://github.com/voldikss/vim-floaterm
 Plug 'voldikss/vim-floaterm'
 
+" Useful mappings
+" source: https://github.com/tpope/vim-unimpaired
+Plug 'https://github.com/tpope/vim-unimpaired'
+
 " Github copilot
 " source: https://github.com/github/copilot-docs
 " Plug 'github/copilot.vim'

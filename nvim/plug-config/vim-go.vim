@@ -9,3 +9,6 @@ map <leader>ds :GoDebugStart<cr>
 map <leader>dc :GoDebugContinue<cr>
 map <leader>dt :GoDebugStop<cr>
 map <leader>db :GoDebugBreakpoint<cr>
+
+" Auto import Go dependencies
+let g:go_fmt_command = "goimports"
