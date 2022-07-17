@@ -1,82 +1,64 @@
 call plug#begin('~/.vim/plugged')
 
 " Javascript bundle.  Provides syntax highlighting and indentation
-" source: https://github.com/pangloss/vim-javascript
 Plug 'pangloss/vim-javascript'
 
 " React syntax highlighting and indenting
-" source: https://github.com/MaxMEllon/vim-jsx-pretty
 Plug 'maxmellon/vim-jsx-pretty'
 
 " Git support
-" source: https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-fugitive'
 
 " File explorer written in lua
-" source: https://github.com/kyazdani42/nvim-tree.lua
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Status/tabline for vim
-" source: https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Color preview
-" source: https://github.com/gko/vim-coloresque
 Plug 'gorodinskiy/vim-coloresque'
 
 " Wrapper for Prettier
-" source: https://github.com/prettier/vim-prettier
 Plug 'prettier/vim-prettier'
 
 " Comment stuff out
-" source: https://github.com/b3nj5m1n/kommentary
 Plug 'terrortylor/nvim-comment'
 
 " Asynchronous lint engine
-" source: https://github.com/dense-analysis/ale
 Plug 'dense-analysis/ale'
 
 " Formatting code
-" source: https://github.com/sbdchd/neoformat
 Plug 'sbdchd/neoformat'
 
 " Display thin vertical lines at each indentation level
-" source: https://github.com/Yggdroot/indentLine
 Plug 'Yggdroot/indentLine'
 
 " Use ripgrep in vim
-" source: https://github.com/Yggdroot/indentLine
 Plug 'jremmen/vim-ripgrep'
 
 " Highlight trailing whitespaces in red
-" source: https://github.com/bronson/vim-trailing-whitespace
 Plug 'bronson/vim-trailing-whitespace'
 
 " Insert or delete brackets, parens, quotes in pair
 Plug 'jiangmiao/auto-pairs'
 
 " Tokyo Night theme
-" source: https://github.com/jiangmiao/auto-pairs
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " OneDark theme
 Plug 'navarasu/onedark.nvim'
 
 " Material theme
-" source: https://github.com/marko-cerovac/material.nvim
 Plug 'marko-cerovac/material.nvim'
 " Git decorations
-" source: https://github.com/lewis6991/gitsigns.nvim
 Plug 'lewis6991/gitsigns.nvim'
 
 " Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
-" source: https://github.com/sindrets/diffview.nvim
 Plug 'sindrets/diffview.nvim'
 
 " Automatic closing of quotes, parenthesis, brackets, etc.
-" source: https://github.com/Raimondi/delimitMate
 Plug 'Raimondi/delimitMate'
 
 " Python code folding
@@ -139,23 +121,18 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
 
 " Go language support
-" source: https://github.com/fatih/vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Debug Adapter Protocol client for Neovim
-" source: https://github.com/mfussenegger/nvim-dap
 Plug 'mfussenegger/nvim-dap'
 
 " nvim-dap extension for providing configurations for launching go debugger
-" source: https://github.com/leoluz/nvim-dap-go
 Plug 'leoluz/nvim-dap-go'
 
 " UI for nvim-dap
-" source: https://github.com/rcarriga/nvim-dap-ui
 Plug 'rcarriga/nvim-dap-ui'
 
 " Add virtual text support to nvim-dap
-" source: https://github.com/theHamsta/nvim-dap-virtual-text
 Plug 'theHamsta/nvim-dap-virtual-text'
 
 " EasyMotion like plugin allowing you to jump anywhere in a document with few keystrokes
@@ -163,15 +140,15 @@ Plug 'theHamsta/nvim-dap-virtual-text'
 Plug 'phaazon/hop.nvim'
 
 " Use neovim terminal in floating/popup window
-" source: https://github.com/voldikss/vim-floaterm
 Plug 'voldikss/vim-floaterm'
 
 " Useful mappings
-" source: https://github.com/tpope/vim-unimpaired
 Plug 'https://github.com/tpope/vim-unimpaired'
 
+" Place, toggle, display marks
+Plug 'https://github.com/kshenoy/vim-signature'
+
 " Github copilot
-" source: https://github.com/github/copilot-docs
 " Plug 'github/copilot.vim'
 
 call plug#end()
