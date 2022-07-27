@@ -9,6 +9,9 @@ vim.cmd "filetype plugin indent on"
 vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
+-- Don't hide quotes
+vim.g.conceallevel = 0
+
 -- Control number of spaces inserted when tab key is pressed
 vim.opt.tabstop = 2
 

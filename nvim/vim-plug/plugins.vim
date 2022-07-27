@@ -33,7 +33,7 @@ Plug 'dense-analysis/ale'
 Plug 'sbdchd/neoformat'
 
 " Display thin vertical lines at each indentation level
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 
 " Use ripgrep in vim
 Plug 'jremmen/vim-ripgrep'

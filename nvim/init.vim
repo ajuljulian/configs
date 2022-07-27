@@ -30,7 +30,7 @@ source ~/.config/nvim/vim-plug/plugins.vim
 source ~/.config/nvim/keymappings.vim
 
 " Plugin configuration
-source ~/.config/nvim/plug-config/indentline.vim
+" source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/neoformat.vim
 source ~/.config/nvim/plug-config/jsx-pretty.vim
 source ~/.config/nvim/plug-config/airline.vim
@@ -57,6 +57,7 @@ lua require('plugins.gitsigns')
 lua require('lsp.lsp-config')
 
 colorscheme onedark
+" colorscheme tokyonight
 " colorscheme material
 
 " Lightbulb

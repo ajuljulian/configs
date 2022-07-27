@@ -53,6 +53,7 @@ vnoremap <silent><leader>ca :<C-U>Lspsaga range_code_action<CR>
 nnoremap <Leader>c :set cursorcolumn!<CR>
 
 nnoremap <C-Z> :NvimTreeToggle<CR>
+nnoremap <S-Z> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 
 nnoremap <silent> <leader>ft :FloatermNew<CR>
