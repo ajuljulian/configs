@@ -3,7 +3,11 @@ set -o vi
 
 export EDITOR=nvim
 
-export TERM=screen-256color
+# uncommenting this is repeating issued commands in the output.
+# not sure why I was setting TERM here instead of letting it 
+# take the default value.  Most likely because something was
+# not working either in tmux or neovim.
+# export TERM=screen-256color
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/bin
