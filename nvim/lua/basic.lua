@@ -21,8 +21,9 @@ vim.opt.shiftwidth = 2
 -- Insert spaces whenever tab key is pressed
 vim.opt.expandtab = true
 
--- Activate line numbering
+-- Activate relative line numbering - show relative line numbers except on the current line
 vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- Automatically indent the next line to match the current line's indentation
 vim.opt.autoindent = true
