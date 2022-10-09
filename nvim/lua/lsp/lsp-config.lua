@@ -12,6 +12,7 @@ require("nvim-lsp-installer").setup(
     }
 )
 local nvim_lsp = require("lspconfig")
+local navic = require("nvim-navic")
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -46,11 +47,16 @@ local on_attach = function(client, bufnr)
     buf_set_keymap("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
     buf_set_keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
     buf_set_keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+
+    -- Make sure documentSymbolProvider is available before attaching nvim-navic to the LSP server
+    if client.server_capabilities.documentSymbolProvider then
+        navic.attach(client, bufnr)
+    end
 end
 
 -- Use a loop to conveniently both setup defined servers
 -- and map buffer local keybindings when the language server attaches
-local servers = {"pyright", "tsserver", "gopls", "elixirls", "yamlls"}
+local servers = {"pyright", "tsserver", "gopls", "elixirls", "yamlls", "clangd"}
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {on_attach = on_attach}
 end

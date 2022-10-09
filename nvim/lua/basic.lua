@@ -65,3 +65,6 @@ vim.g.material_style = "lighter"
 
 -- require("autocommands.example1")
 --require('autocommands.example2')
+
+-- Show current code context in winbar
+vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"

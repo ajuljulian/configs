@@ -136,7 +136,6 @@ Plug 'rcarriga/nvim-dap-ui'
 Plug 'theHamsta/nvim-dap-virtual-text'
 
 " EasyMotion like plugin allowing you to jump anywhere in a document with few keystrokes
-" https://github.com/phaazon/hop.nvim
 Plug 'phaazon/hop.nvim'
 
 " Use neovim terminal in floating/popup window
@@ -147,6 +146,9 @@ Plug 'https://github.com/tpope/vim-unimpaired'
 
 " Place, toggle, display marks
 Plug 'https://github.com/kshenoy/vim-signature'
+
+" Statusline/winbar component to show current code context
+Plug 'SmiteshP/nvim-navic'
 
 " Github copilot
 " Plug 'github/copilot.vim'
