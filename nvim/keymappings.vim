@@ -33,7 +33,7 @@ nnoremap <leader>q :q<CR>
 " Source init.vim file
 nnoremap <leader><leader>s :source $MYVIMRC<cr>
 
-" Move among buffers with CTRL
+" Move among buffers (overrides some default key mappings but works great)
 map <S-L> :bnext<CR>
 map <S-H> :bprev<CR>
 
