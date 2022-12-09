@@ -73,6 +73,7 @@ vim.opt.completeopt = {"menuone", "noselect"}
 vim.o.termguicolors = true
 
 vim.cmd("source ~/.config/nvim/vim-plug/plugins.vim")
+-- require("plugins")
 
 -- Shortcuts
 vim.cmd("source ~/.config/nvim/keymappings.vim")
