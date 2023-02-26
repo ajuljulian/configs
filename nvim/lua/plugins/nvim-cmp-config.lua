@@ -80,7 +80,7 @@ cmp.setup(
 -- Setup lspconfig.
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local servers = {"pyright", "tsserver", "gopls", "sumneko_lua", "elixirls"}
+local servers = {"pyright", "tsserver", "gopls", "lua_ls", "elixirls"}
 for _, lsp in ipairs(servers) do
     require("lspconfig")[lsp].setup {
         capabilities = capabilities

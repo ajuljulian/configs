@@ -44,7 +44,7 @@ return require("packer").startup(
         use "jremmen/vim-ripgrep"
 
         -- Highlight trailing whitespaces in red
-        use "bronson/vim-trailing-whitespace"
+        -- use "bronson/vim-trailing-whitespace"
 
         -- Insert or delete brackets, parens, quotes in pair
         use "jiangmiao/auto-pairs"

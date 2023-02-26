@@ -14,8 +14,8 @@ Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Status/tabline for vim
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 " Color preview
 Plug 'gorodinskiy/vim-coloresque'
@@ -36,7 +36,7 @@ Plug 'sbdchd/neoformat'
 Plug 'jremmen/vim-ripgrep'
 
 " Highlight trailing whitespaces in red
-Plug 'bronson/vim-trailing-whitespace'
+" Plug 'bronson/vim-trailing-whitespace'
 
 " Insert or delete brackets, parens, quotes in pair
 Plug 'jiangmiao/auto-pairs'
